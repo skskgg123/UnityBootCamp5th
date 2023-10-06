@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namspace", "Namspace.csproj", "{A81B4338-62B9-4939-9FC9-3CF877A20462}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A81B4338-62B9-4939-9FC9-3CF877A20462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A81B4338-62B9-4939-9FC9-3CF877A20462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A81B4338-62B9-4939-9FC9-3CF877A20462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A81B4338-62B9-4939-9FC9-3CF877A20462}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E50B1934-39B3-4AA8-84AD-2FC9A70EA2A7}
+	EndGlobalSection
+EndGlobal
