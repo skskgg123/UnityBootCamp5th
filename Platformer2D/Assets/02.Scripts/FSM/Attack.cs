@@ -1,13 +1,15 @@
 using Platformer.Animations;
 using Platformer.Stats;
+using Platformer.Datum;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 namespace Platformer.FSM.Character
 {
     public class Attack : CharacterStateBase
-    {  
+    {
         public override CharacterStateID id => CharacterStateID.Attack;
         public override bool canExecute
         {
@@ -16,29 +18,31 @@ namespace Platformer.FSM.Character
                 if (base.canExecute == false)
                     return false;
 
-                // ÄŞº¸½ºÅÃÀÌ ½×¿©ÀÖ´Â »óÈ²¿¡¼­ °ø°İÀÌ ³¡³µ´ø ½Ã°£ºÎÅÍ °æ°úµÈ ½Ã°£ÀÌ ÄŞº¸ ÃÊ±âÈ­ ½Ã°£À» ³Ñ¾î°¬À¸¸é ÄŞº¸ ¾ÈµÊ
-                float elapsedTime = Time.time - _exitTimeMark; // ¸¶Áö¸· °ø°İÀÌÈÄ °æ°úµÈ ½Ã°£
-                if (_comboStack > 0 && elapsedTime >= _comboResetTime )
+                // ì½¤ë³´ìŠ¤íƒì´ ìŒ“ì—¬ìˆëŠ” ìƒí™©ì—ì„œ
+                // ê³µê²©ì´ ëë‚¬ë˜ ì‹œê°„ë¶€í„° ê²½ê³¼ëœ ì‹œê°„ì´ ì½¤ë³´ ì´ˆê¸°í™”ì‹œê°„ì„ ë„˜ì–´ê°”ìœ¼ë©´ ì½¤ë³´ ì•ˆë¨
+                float elapsedTime = Time.time - _exitTimeMark; // ë§ˆì§€ë§‰ ê³µê²©ì´í›„ ê²½ê³¼ëœ ì‹œê°„
+                if (_comboStack > 0 &&
+                    elapsedTime >= _comboResetTime)
                 {
                     _comboStack = 0;
                     return false;
                 }
 
-                // ÇöÀç ½ºÅÃÀÌ ÃÖ´ëÄ¡¸¦ ³ÑÀ¸¸é ÄŞº¸ ¾ÈµÊ
+                // í˜„ì¬ ìŠ¤íƒì´ ìµœëŒ€ì¹˜ë¥¼ ë„˜ìœ¼ë©´ ì½¤ë³´ ì•ˆë¨
                 if (_comboStack > _comboStackMax)
                 {
                     return false;
                 }
 
-                // Ã¹Å¸´Â ¹«Á¶°Ç ¤·¤»
-                // ÈÄ¼ÓÅ¸´Â ÀÌÀü °ø°İ È÷Æ®ÆÇÁ¤ ÀÌÈÄ ¤·¤»
+                // ì²«íƒ€ëŠ” ë¬´ì¡°ê±´ ã…‡ã…‹ 
+                // í›„ì†íƒ€ëŠ” ì´ì „ ê³µê²© íˆíŠ¸íŒì • ì´í›„ ã…‡ã…‹
                 if ((_comboStack == 0 || (_comboStack > 0 && _hasHit)) &&
                     (machine.currentStateID == CharacterStateID.Idle ||
                      machine.currentStateID == CharacterStateID.Move ||
                      machine.currentStateID == CharacterStateID.Crouch ||
                      machine.currentStateID == CharacterStateID.Jump ||
-                     machine.currentStateID == CharacterStateID.DoubleJump ||
                      machine.currentStateID == CharacterStateID.DownJump ||
+                     machine.currentStateID == CharacterStateID.DoubleJump ||
                      machine.currentStateID == CharacterStateID.Fall))
                 {
                     return true;
@@ -48,32 +52,24 @@ namespace Platformer.FSM.Character
             }
         }
 
+        private int _comboStackMax; // ìµœëŒ€ ì½¤ë³´ ìŠ¤íƒ
+        private int _comboStack; // í˜„ì¬ ì½¤ë³´ ìŠ¤íƒ
+        private float _comboResetTime; // ê³µê²© ì´í›„ ì½¤ë³´ ì´ˆê¸°í™” ì‹œê°„
+        private float _exitTimeMark; // ë§ˆì§€ë§‰ ê³µê²© ëë‚œ ì‹œê°„
+        private bool _hasHit; // í˜„ì¬ ê³µê²© íˆíŠ¸íŒì • ëëŠ”ì§€ ?
 
-        private int _comboStackMax;    // ÃÖ´ë ÄŞº¸ ½ºÅÃ
-        private int _comboStack;       // ÇöÀç ÄŞº¸ ½ºÅÃ
-        private float _comboResetTime; // °ø°İ ÀÌÈÄ ÄŞº¸ ÃÊ±âÈ­ ½Ã°£
-        private float _exitTimeMark;   // ¸¶Áö¸· °ø°İ ³¡³­ ½Ã°£
-        private bool _hasHit;          // ÇöÀç °ø°İ È÷Æ®ÆÇÁ¤ Çß´ÂÁö ? 
 
-        public class AttackSetting
-        {
-            public int targetMax; // ÃÖ´ë Å¸°ÔÆÃ ¼ö
-            public LayerMask targetMask; // Å¸°Ù °ËÃâ ¸¶½ºÅ©
-            public float damageGain; // °ø°İ °è¼ö
-            public Vector2 castCenter; // Å¸°Ù °¨Áö Çü»ó(»ç°¢Çü) ¹üÀ§ Áß½É
-            public Vector2 castSize; // Å¸°Ù °¨Áö Çü»ó Å©±â
-            public float castDistance; // Å¸°Ù °¨Áö Çü»ó ºö °Å¸®
-        }
-
-        private AttackSetting[] _attackSettings;
+        private SkillCastSetting[] _attackSettings;
         private List<IHp> _targets = new List<IHp>();
         private CharacterAnimationEvents _animationEvents;
 
-        public Attack(CharacterMachine machine, AttackSetting[] attackSettings, float comboResetTime) : base(machine)
+        public Attack(CharacterMachine machine, float comboResetTime, SkillCastSetting[] attackSettings) 
+            : base(machine)
         {
             _attackSettings = attackSettings;
+            _comboStackMax = attackSettings.Length - 1;
             _comboResetTime = comboResetTime;
-            _comboStackMax = attackSettings.Length -1;
+
             _animationEvents = animator.GetComponent<CharacterAnimationEvents>();
             _animationEvents.onHit = () =>
             {
@@ -82,8 +78,8 @@ namespace Platformer.FSM.Character
                     if (target == null)
                         continue;
 
-                    float damage = Random.Range(controller.damageMin, controller.damageMax) * _attackSettings[_comboStack -1].damageGain;
-                    target.DepleteHp(controller, damage);
+                    float damage = Random.Range(controller.damageMin, controller.damageMax) * _attackSettings[_comboStack - 1].damageGain;
+                    target.DepleteHp(transform, damage);
                 }
                 _hasHit = true;
             };
@@ -93,10 +89,10 @@ namespace Platformer.FSM.Character
         {
             base.OnStateEnter();
             controller.isDirectionChangeable = false;
-            controller.isMovable = controller.isGrounded;
+            controller.isMovable = false; //controller.isGrounded;
             _hasHit = false;
 
-            AttackSetting setting = _attackSettings[_comboStack - 1];
+            SkillCastSetting setting = _attackSettings[_comboStack];
             RaycastHit2D[] hits =
                 Physics2D.BoxCastAll(origin: rigidbody.position + new Vector2(setting.castCenter.x * controller.direction, setting.castCenter.y),
                                      size: setting.castSize,
@@ -105,23 +101,7 @@ namespace Platformer.FSM.Character
                                      distance: setting.castDistance,
                                      layerMask: setting.targetMask);
 
-            Vector2 origin = rigidbody.position + new Vector2(setting.castCenter.x * controller.direction, setting.castCenter.y);
-            Vector2 size = setting.castSize;
-            float distance = setting.castDistance;
-            // L-T -> R-T
-            Debug.DrawLine(origin + new Vector2(-size.x / 2.0f * controller.direction, +size.y / 2.0f),
-                           origin + new Vector2(+size.x / 2.0f * controller.direction, +size.y / 2.0f) + Vector2.right * controller.direction * distance);
-            // L-B -> R-B
-            Debug.DrawLine(origin + new Vector2(-size.x / 2.0f * controller.direction, -size.y / 2.0f),
-                           origin + new Vector2(+size.x / 2.0f * controller.direction, -size.y / 2.0f) + Vector2.right * controller.direction * distance);
-            // L-T -> L-B
-            Debug.DrawLine(origin + new Vector2(-size.x / 2.0f * controller.direction, +size.y / 2.0f),
-                           origin + new Vector2(-size.x / 2.0f * controller.direction, -size.y / 2.0f));
-            // R-T -> R-B
-            Debug.DrawLine(origin + new Vector2(+size.x / 2.0f * controller.direction, +size.y / 2.0f) + Vector2.right * controller.direction * distance,
-                           origin + new Vector2(+size.x / 2.0f * controller.direction, -size.y / 2.0f) + Vector2.right * controller.direction * distance);
-
-            // ÀüÃ¼ °¨ÁöµÈ ¾ÆÀÌµé Áß¿¡¼­ ÃÖ´ë Å¸°Ù ¼ö ±îÁö¸¸ ´ë»óÀ¸·Î µî·Ï
+            // ì „ì²´ ê°ì§€ëœ ì•„ì´ë“¤ì¤‘ì—ì„œ ìµœëŒ€ íƒ€ê²Ÿ ìˆ˜ ê¹Œì§€ë§Œ ëŒ€ìƒìœ¼ë¡œ ë“±ë¡
             _targets.Clear();
             for (int i = 0; i < hits.Length; i++)
             {
@@ -132,9 +112,32 @@ namespace Platformer.FSM.Character
                     _targets.Add(target);
             }
 
-            animator.SetFloat("comboStack", _comboStack++); // ¾Ö´Ï¸ŞÀÌ¼Ç ÆÄ¶ó¹ÌÅÍ ¼¼ÆÃ ¹× ÄŞº¸½ºÅÃ ½×±â
+            animator.SetFloat("comboStack", _comboStack++); //ì• ë‹ˆë©”ì´ì…˜ íŒŒë¼ë¯¸í„° ì„¸íŒ… ë° ì½¤ë³´ìŠ¤íƒ ìŒ“ê¸°
             animator.Play("Attack");
 
+            Vector2 origin = rigidbody.position + new Vector2(setting.castCenter.x * controller.direction, setting.castCenter.y);
+            Vector2 size = setting.castSize;
+            float distance = setting.castDistance;
+            // L-T -> R-T
+            Debug.DrawLine(origin + new Vector2(-size.x / 2.0f * controller.direction, +size.y / 2.0f),
+                           origin + new Vector2(+size.x / 2.0f * controller.direction, +size.y / 2.0f) + Vector2.right * controller.direction * distance,
+                           Color.red,
+                           animator.GetCurrentAnimatorStateInfo(0).length);
+            // L-B -> R-B
+            Debug.DrawLine(origin + new Vector2(-size.x / 2.0f * controller.direction, -size.y / 2.0f),
+                           origin + new Vector2(+size.x / 2.0f * controller.direction, -size.y / 2.0f) + Vector2.right * controller.direction * distance,
+                           Color.red,
+                           animator.GetCurrentAnimatorStateInfo(0).length);
+            // L-T -> L-B
+            Debug.DrawLine(origin + new Vector2(-size.x / 2.0f * controller.direction, +size.y / 2.0f),
+                           origin + new Vector2(-size.x / 2.0f * controller.direction, -size.y / 2.0f),
+                           Color.red,
+                           animator.GetCurrentAnimatorStateInfo(0).length);
+            // R-T -> R-B
+            Debug.DrawLine(origin + new Vector2(+size.x / 2.0f * controller.direction, +size.y / 2.0f) + Vector2.right * controller.direction * distance,
+                           origin + new Vector2(+size.x / 2.0f * controller.direction, -size.y / 2.0f) + Vector2.right * controller.direction * distance,
+                           Color.red,
+                           animator.GetCurrentAnimatorStateInfo(0).length);
 
         }
 
@@ -154,8 +157,10 @@ namespace Platformer.FSM.Character
             if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                 nextID = CharacterStateID.Idle;
 
+            if (controller.isGrounded)
+                controller.move = new Vector2(controller.horizontal * 0.1f, 0.0f);
+
             return nextID;
-            
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Platformer.FSM
 {
     /// <summary>
-    /// À§¿¡ °¨ÁöµÈ »ç´Ù¸®¸¦ Å¸´Â »óÅÂ
+    /// ì•„ë˜ì— ê°ì§€ëœ ì‚¬ë‹¤ë¦¬ë¥¼ íƒ€ëŠ” ìƒíƒœ
     /// </summary>
     public class DownLadderClimb : CharacterStateBase
     {
@@ -21,10 +21,10 @@ namespace Platformer.FSM
                                             machine.currentStateID == CharacterStateID.DownJump ||
                                             machine.currentStateID == CharacterStateID.DoubleJump) &&
                                            controller.isDownLadderDetected &&
-                                            controller.isGrounded; // Á¡ÇÁÇßÀ» ¶§ ¾Æ·¡¸¦ ´­·¯µµ »ç´Ù¸® Å¸´Â°Í ¹æÁö
+                                           controller.isGrounded;
 
-        private Ladder _ladder; // »ç´Ù¸® Å¸´Â µµÁß »ç´Ù¸® °¨Áö°¡ ¾ÈµÉ ¼ö ÀÖÀ¸¹Ç·Î Ã³À½ Å¸±â ½ÃÀÛÇÒ¶§ Ä³½Ì
-        private float _vertical; // ÄÁÆ®·Ñ·¯ÀÇ ¼öÁ÷ ÀÔ·ÂÀ¸·Î ¿òÁ÷ÀÏ º¯¼ö
+        private Ladder _ladder; // ì‚¬ë‹¤ë¦¬ íƒ€ëŠ” ë„ì¤‘ ì‚¬ë‹¤ë¦¬ ê°ì§€ê°€ ì•ˆë  ìˆ˜ ìˆìœ¼ë¯€ë¡œ ì²˜ìŒ íƒ€ê¸° ì‹œì‘í• ë•Œ ìºì‹±
+        private float _vertical; // ì»¨íŠ¸ë¡¤ëŸ¬ì˜ ìˆ˜ì§ ì…ë ¥ìœ¼ë¡œ ì›€ì§ì¼ ë³€ìˆ˜
         private bool _doExit;
 
         public DownLadderClimb(CharacterMachine machine) : base(machine)
@@ -43,7 +43,7 @@ namespace Platformer.FSM
             animator.speed = 0.0f;
 
             _ladder = controller.downLadder;
-            // ÇÃ·¹ÀÌ¾îÀÇ À§Ä¡°¡ »ç´Ù¸® ¾Æ·¡·ÎÅ¸±â ÁøÀÔÁ¡º¸´Ù ³·À¸¸é ÇöÀçÀ§Ä¡ ±×´ë·Î, ³ôÀ¸¸é ÁøÀÔÁ¡À¸·Î ÀÌµ¿
+            // í”Œë ˆì´ì–´ì˜ ìœ„ì¹˜ê°€ ì‚¬ë‹¤ë¦¬ ì•„ë˜ë¡œíƒ€ê¸° ì§„ì…ì ë³´ë‹¤ ë‚®ìœ¼ë©´ í˜„ì¬ìœ„ì¹˜ ê·¸ëŒ€ë¡œ, ë†’ìœ¼ë©´ ì§„ì…ì ìœ¼ë¡œ ì´ë™
             Vector2 startPos = transform.position.y < _ladder.downEnter.y ? new Vector2(_ladder.top.x, transform.position.y) : _ladder.downEnter;
             transform.position = startPos;
             _doExit = false;
@@ -63,22 +63,22 @@ namespace Platformer.FSM
             if (nextID == CharacterStateID.None)
                 return id;
 
-            // À§ÂÊÀ¸·Î ¹æÇâÀüÈ¯½Ã
+            // ìœ„ìª½ìœ¼ë¡œ ë°©í–¥ì „í™˜ì‹œ
             if (_vertical <= 0 && controller.vertical > 0)
             {
                 animator.Play("LadderUp");
             }
-            // ¾Æ·¡ÂÊÀ¸·Î ¹æÇâÀüÈ¯½Ã
+            // ì•„ë˜ìª½ìœ¼ë¡œ ë°©í–¥ì „í™˜ì‹œ
             else if (_vertical >= 0 && controller.vertical < 0)
             {
                 animator.Play("LadderDown");
             }
 
             _vertical = controller.vertical;
-            animator.speed = Mathf.Abs(_vertical); // ¼öÁ÷ ÀÔ·Â¿¡ µû¶ó ¾Ö´Ï¸ŞÀÌ¼Ç Àç»ı
+            animator.speed = Mathf.Abs(_vertical); // ìˆ˜ì§ ì…ë ¥ì— ë”°ë¼ ì• ë‹ˆë©”ì´ì…˜ ì¬ìƒ
 
 
-            controller.hasJumped = controller.horizontal == 0.0f; // ¼öÆòÀÔ·Â µé¾î¿Ã½Ã Á¡ÇÁ °¡´ÉÇÏµµ·Ï
+            controller.hasJumped = controller.horizontal == 0.0f; // ìˆ˜í‰ì…ë ¥ ë“¤ì–´ì˜¬ì‹œ ì í”„ ê°€ëŠ¥í•˜ë„ë¡
 
             if (_doExit)
                 nextID = CharacterStateID.Idle;

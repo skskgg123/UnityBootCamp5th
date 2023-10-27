@@ -1,10 +1,5 @@
 using Platformer.FSM;
-using Platformer.FSM.Character;
-using Platformer.GameElements;
-using System.Linq;
-using System.Runtime.InteropServices;
 using UnityEngine;
-using UnityEngine.XR;
 
 namespace Platformer.Controllers
 {
@@ -13,6 +8,17 @@ namespace Platformer.Controllers
         public override float horizontal => Input.GetAxis("Horizontal");
 
         public override float vertical => Input.GetAxis("Vertical");
+
+        private float _invincibleTimer;
+
+        public void SetInvincible(float duration)
+        {
+            if (duration < _invincibleTimer)
+                return;
+
+            _invincibleTimer = duration;
+            invincible = true;
+        }
 
 
         protected override void Start()
@@ -28,6 +34,16 @@ namespace Platformer.Controllers
         protected override void Update()
         {
             base.Update();
+            
+            // 무적 시간 확인
+            if (_invincibleTimer > 0)
+            {
+                _invincibleTimer -= Time.deltaTime;
+
+                if (_invincibleTimer <= 0)
+                    invincible = false;
+            }
+
 
             if (Input.GetKey(KeyCode.LeftAlt))
             {
@@ -35,7 +51,7 @@ namespace Platformer.Controllers
                     (machine.currentStateID == CharacterStateID.WallSlide == false && machine.ChangeState(CharacterStateID.Jump)))
                 {
                 }
-
+                
             }
 
             if (Input.GetKeyDown(KeyCode.LeftAlt))
@@ -57,6 +73,15 @@ namespace Platformer.Controllers
                 machine.ChangeState(CharacterStateID.Idle);
             }
 
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                machine.ChangeState(CharacterStateID.UpLadderClimb);
+            }
+
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                machine.ChangeState(CharacterStateID.DownLadderClimb);
+            }
 
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
@@ -73,13 +98,26 @@ namespace Platformer.Controllers
                 machine.ChangeState(CharacterStateID.Dash);
             }
 
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKeyDown(KeyCode.X))
             {
-                transform.position += new Vector3(0, 0.3f) * Time.deltaTime;
-                machine.ChangeState(CharacterStateID.LadderUp);
+                machine.ChangeState(CharacterStateID.Slide);
             }
 
+            if (Input.GetKey(KeyCode.LeftControl))
+            {
+                machine.ChangeState(CharacterStateID.Attack);
+            }
+        }
 
+        public override void DepleteHp(object subject, float amount)
+        {
+            base.DepleteHp(subject, amount);
+
+            SetInvincible(0.7f);
+
+            if (subject.GetType().Equals(typeof(Transform)))
+                Knockback(Vector2.right * (((Transform)subject).position.x - transform.position.x < 0 ? 1.0f : -1.0f) * 1.0f
+                          + Vector2.up * 1.0f);
         }
     }
 }

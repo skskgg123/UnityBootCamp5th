@@ -9,6 +9,9 @@ namespace Platformer.Controllers
 {
     public abstract class CharacterController : MonoBehaviour, IHp
     {
+        public float damageMin; // ÏµúÏÜåÍ≥µ
+        public float damageMax; // ÏµúÎåÄÍ≥µ
+
         public const int DIRECTION_RIGHT = 1;
         public const int DIRECTION_LEFT = -1;
         public int direction
@@ -119,8 +122,14 @@ namespace Platformer.Controllers
 
                 if (col)
                 {
-                    upLadder = col.GetComponent<Ladder>();
-                    return true;
+                    if (col.TryGetComponent(out upLadder))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        throw new Exception($"[CharacterController] : Seems like layer of {col.name} is wrong");
+                    }
                 }
 
                 upLadder = null;
@@ -149,9 +158,9 @@ namespace Platformer.Controllers
 
         public Ladder upLadder;
         public Ladder downLadder;
-        [SerializeField] private float _ladderUpDetectOffset; // ªÁ¥Ÿ∏Æ≈∏∞Ì ø√∂Û∞°±‚¿ß«— ¿ßƒ°∞®¡ˆ ø¿«¡º¬
-        [SerializeField] private float _ladderDownDetectOffset; // ªÁ¥Ÿ∏Æ≈∏∞Ì ≥ª∑¡∞°±‚¿ß«— ¿ßƒ°∞®¡ˆ ø¿«¡º¬
-        [SerializeField] private float _ladderDetectRadius; // ∞®¡ˆ π›∞Ê
+        [SerializeField] private float _ladderUpDetectOffset; // ÏÇ¨Îã§Î¶¨ÌÉÄÍ≥† Ïò¨ÎùºÍ∞ÄÍ∏∞ÏúÑÌïú ÏúÑÏπòÍ∞êÏßÄ Ïò§ÌîÑÏÖã
+        [SerializeField] private float _ladderDownDetectOffset; // ÏÇ¨Îã§Î¶¨ÌÉÄÍ≥† ÎÇ¥Î†§Í∞ÄÍ∏∞ÏúÑÌïú ÏúÑÏπòÍ∞êÏßÄ Ïò§ÌîÑÏÖã
+        [SerializeField] private float _ladderDetectRadius; // Í∞êÏßÄ Î∞òÍ≤Ω
         [SerializeField] private LayerMask _ladderMask;
 
         #endregion
@@ -180,7 +189,7 @@ namespace Platformer.Controllers
 
         public float hpMin => 0f;
 
-        public bool invincible { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public bool invincible { get; set; }
 
         private float _hp;
 
@@ -199,11 +208,16 @@ namespace Platformer.Controllers
         public bool hasDoubleJumped;
         protected CharacterMachine machine;
 
+        public void Knockback(Vector2 force)
+        {
+            rigidbody.velocity = Vector2.zero;
+            rigidbody.AddForce(force, ForceMode2D.Impulse);
+        }
 
         public void Stop()
         {
-            move = Vector2.zero; // ¿‘∑¬ 0
-            rigidbody.velocity = Vector2.zero; // º”µµ 0
+            move = Vector2.zero; // ÏûÖÎ†• 0
+            rigidbody.velocity = Vector2.zero; // ÏÜçÎèÑ 0
         }
 
         protected virtual void Awake()
@@ -249,7 +263,7 @@ namespace Platformer.Controllers
             rigidbody.position += move * Time.fixedDeltaTime;
         }
 
-        private void OnDrawGizmosSelected()
+        protected virtual void OnDrawGizmosSelected()
         {
             DrawGroundDetectGizmos();
             DrawGroundBelowDetectGizmos();
@@ -323,7 +337,7 @@ namespace Platformer.Controllers
             onHpRecovered?.Invoke(amount);
         }
 
-        public void DepleteHp(object subject, float amount)
+        public virtual void DepleteHp(object subject, float amount)
         {
             hpValue -= amount;
             onHpDepleted?.Invoke(amount);
