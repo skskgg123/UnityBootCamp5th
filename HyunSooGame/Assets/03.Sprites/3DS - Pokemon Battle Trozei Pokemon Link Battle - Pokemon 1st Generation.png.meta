@@ -1,0 +1,3462 @@
+fileFormatVersion: 2
+guid: dc4afbb50b250c4439df0f440359cbcb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1549
+        width: 109
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935dc041dbd1fcc448a4113c8c8916df
+      internalID: -226361212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1549
+        width: 119
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c773edee2be85cd4fa5baff020269ef0
+      internalID: -2114845129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_2
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1548
+        width: 118
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9167ec6c3b8e5234fb4e15765133195f
+      internalID: -311373352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_3
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1551
+        width: 90
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68fd217547b9df4f837f522a5f4cb8d
+      internalID: 484298424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_4
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1551
+        width: 101
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7851a6bd2aaa54fae0f2c797a75800
+      internalID: -1093307503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_5
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 1546
+        width: 92
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf35a1be7c82234a98e20e5a99513a7
+      internalID: -1817502793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_6
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1553
+        width: 96
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b030f8e1c8d9b7748b63e5119f79ba10
+      internalID: -1739923606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_7
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 1552
+        width: 109
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0658d8e1f21889a49953cdc9cc6a3e01
+      internalID: 975206430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_8
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1550
+        width: 113
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d845338ebf121f24693f6db636179381
+      internalID: 649986543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_9
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 1556
+        width: 97
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d573f06effaf8c043a88c0bdf6ca498b
+      internalID: 662992934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_10
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 1553
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39eca90c1f0d7e4eb206f95fef38d11
+      internalID: 1178988938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_11
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 1548
+        width: 105
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1336be830ae3ae46938a85f4b71510d
+      internalID: 409736134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_12
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1423
+        width: 89
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02048aef6c9f714d900d979f8ac4c9e
+      internalID: 717256075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_13
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1425
+        width: 93
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d8b0f942e8fcb47a36f34c02ce9cd6
+      internalID: -2060940304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_14
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1420
+        width: 97
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c5dec1cc369a34aae8b3e8ab7e656d
+      internalID: -42436912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_15
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1422
+        width: 89
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9852d901ec0c224eaec14beba7564ed
+      internalID: 1188440003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_16
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1424
+        width: 90
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7b4a5d9040bb24b862f1d7a2fb9229
+      internalID: -1473366459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_17
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1419
+        width: 99
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee2bfc9409381643a3c4c5e74bc0ffc
+      internalID: 591282634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_18
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1419
+        width: 111
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e557adac1af602447abcfaca1dc5e14e
+      internalID: 2025975485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_19
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 1423
+        width: 112
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4139d70dbe499741ba9abee2a232937
+      internalID: 823730062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_20
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1422
+        width: 106
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49ce4dce0924ce4b8e407a8f5c490ce
+      internalID: 1009721714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_21
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1414
+        width: 103
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e00304980d4f0441a624f6c06172c2c
+      internalID: 1713178080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_22
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 1427
+        width: 102
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47496543d696b04cac838d4e598137b
+      internalID: -1481633838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_23
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 1425
+        width: 108
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4df1cc77366ac45846ade80cf8db5e
+      internalID: 951269556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1294
+        width: 109
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7d7d458fd8994428fbdbfea1f6122f
+      internalID: 561526833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_25
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1296
+        width: 124
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3eefaf59899fb448b40982eb62d24a
+      internalID: 880305648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_26
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1296
+        width: 100
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6406d33b89fc2d048b7c9a0185d20ca1
+      internalID: -1463608778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_27
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1292
+        width: 97
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f011085fb041a478221a976c5a7977
+      internalID: 1458825266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_28
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1299
+        width: 105
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ef8f4558e545749ada97d8df6056d4
+      internalID: 1167465179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_29
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1300
+        width: 120
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b948fc3e0063894281ed74ce9ae3c74
+      internalID: -1960505666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_30
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 1295
+        width: 104
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ece0b916fac104ea1fe26a4e813988
+      internalID: 1855943476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_31
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 1293
+        width: 104
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5cdf9fc19fdab43a2fc25d376ce93e
+      internalID: -58205994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_32
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 1289
+        width: 100
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367ec99dd2da9c64989bda04900d5a4e
+      internalID: -503643226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_33
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1291
+        width: 112
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75cc805896329a4db758a165aaaae93
+      internalID: 1244817941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_34
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 1298
+        width: 98
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6213175e22196e14ea01129768e33863
+      internalID: -388573236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_35
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 1296
+        width: 112
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf62c5015c9c63848a6be52744ed301b
+      internalID: -1525465475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_36
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1166
+        width: 104
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc20f013309b28468f394a296ba07b7
+      internalID: -1435012876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_37
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1169
+        width: 105
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30eb4941338eae74b807658a68b00268
+      internalID: 739742149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_38
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1171
+        width: 93
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad09b52d3ed12f4ebf1f1ed2bc5d191
+      internalID: -95788328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_39
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1166
+        width: 98
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f489e12425c384e47b0cfb9e876857fc
+      internalID: 1196457946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_40
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1163
+        width: 110
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a10c1c08f063d54db375e1d5215653f
+      internalID: -418983807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_41
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1165
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9157b5f288d114186d2cea442af427
+      internalID: 1384038850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_42
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 1164
+        width: 117
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82786935b5d3285409e95b2b3dc2724d
+      internalID: 1088148136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_43
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 1165
+        width: 106
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5acf84b7e7657f46a0e54a86bbee285
+      internalID: 1040317740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_44
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 1169
+        width: 102
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd59920a7afddae4ea2a936f3f633e77
+      internalID: 1952495153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_45
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 1169
+        width: 98
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53644231cbe94e7489e070833f1b0f49
+      internalID: 930934798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_46
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 1172
+        width: 93
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900012df41e879a459ae71471536b18c
+      internalID: -1759253431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_47
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 1165
+        width: 96
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3901b7b40fcf84745a7f7867a0851567
+      internalID: -1787318932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_48
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1037
+        width: 100
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6723add6f92bbd4b8cfb8f81f661d21
+      internalID: -435914525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_49
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1043
+        width: 87
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67581533b05f87c459914084787e348a
+      internalID: 261050515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_50
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1039
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d018a640a6d6144faf4cad77bd52483
+      internalID: 910728668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_51
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1039
+        width: 110
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2dcee2335d67e54eb3b073c442c2575
+      internalID: 1824818237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_52
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1040
+        width: 100
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0032e4046eb9a46b4d434be990f180
+      internalID: 144486028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_53
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1039
+        width: 90
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc15fa114ae9d2b46964dcd19a95dcd0
+      internalID: -1354760692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_54
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1034
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7d987370de5674cace5bfd62f3c6c0
+      internalID: 526854690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_55
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 1036
+        width: 114
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66845041db4c1b48a882a6a183887bd
+      internalID: 174607724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_56
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1036
+        width: 104
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc424a3793acb824bb167db388791b14
+      internalID: -1367491366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_57
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1036
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2344aaeaf57e348a488034473bda6f
+      internalID: -1492701629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_58
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1040
+        width: 106
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2bc33e677427c4db11c3fa6e992f2e
+      internalID: 1569481628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_59
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 1044
+        width: 101
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73ad3c3560bb494eb24398a6adba44e
+      internalID: 955640346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_60
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 914
+        width: 114
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8e3bba04b7e7b4e9ca53a066fc89c0
+      internalID: 1917287210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_61
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 914
+        width: 114
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ccea7b9155295e4cbfa3571d38bbd31
+      internalID: 901471390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_62
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 913
+        width: 92
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca5687f223436047873a4e60382e8df
+      internalID: 1804219633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_63
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 909
+        width: 91
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0896fd19da1b3614085ef6abf91b1f3c
+      internalID: -1173177686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_64
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 910
+        width: 104
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121ffe87070453440805d7522b5b50dc
+      internalID: -1640293545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_65
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 909
+        width: 89
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7683784f279b3db40b3d1ad6daa7c18a
+      internalID: -884795540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_66
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 910
+        width: 96
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf644be4384116d439a7ceceb933bdd5
+      internalID: 123328392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_67
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 910
+        width: 92
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b88079d5f5f58b4889d2ffbd3d889e1
+      internalID: -996990735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_68
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 912
+        width: 110
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adba3b3664e2c8645b1ff3442e5db8bf
+      internalID: -388977569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_69
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 908
+        width: 106
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12551a6696fe9534b90aa39d5bd49a32
+      internalID: -1487354090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_70
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 910
+        width: 104
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c3fbb551d366846abbcb2b0e2a2ce7
+      internalID: -555660443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_71
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 910
+        width: 108
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ffd035256dd2d4f8ca96dfa95b235e
+      internalID: -78385771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_72
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 782
+        width: 112
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501cd70420523b34ebae0a566a52cfc0
+      internalID: -1248561117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_73
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 782
+        width: 101
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b0dce84070c8244bc1abcb052f0082
+      internalID: -2118127808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_74
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 784
+        width: 113
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7793992b0abf29d4c94dd3234db0081f
+      internalID: 1934698691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_75
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 785
+        width: 108
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba4b746690cf984a911ea93bf25dc7b
+      internalID: -385893878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_76
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 783
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abfacf279a9286a4ab14e53b04d10124
+      internalID: 1743863841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_77
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 783
+        width: 109
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae4a253569b7aa4a8ae69193315b56f
+      internalID: -1056342515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_78
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 787
+        width: 99
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4759d78cbb1636449870653230ea599f
+      internalID: -402323695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_79
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 784
+        width: 110
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501bbc8367e38c14f9518407708f5002
+      internalID: -52968893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_80
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 779
+        width: 111
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e4064b5872cdc4c953ce1e680e7441
+      internalID: 1813635783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_81
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 780
+        width: 103
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250581f045271c44aa32d9c26126d757
+      internalID: -1822388918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_82
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 775
+        width: 107
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603b1a74d4ceba04aab50bac0e1fd975
+      internalID: 2101994185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_83
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 783
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5f705419ca20d4580c62aa30a22823
+      internalID: 1750634463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_84
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 654
+        width: 109
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782308a61edce254d9ae144b76578e23
+      internalID: 453231556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_85
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 652
+        width: 89
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a438fb10351357a4b9a7c01bbf7c550c
+      internalID: 1568772469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_86
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 656
+        width: 89
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f770a2ba9312ef14dbc13a8ef00580a5
+      internalID: -2004835716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_87
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 655
+        width: 99
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3de4191579b5d4b81fd1512c767942
+      internalID: -1496056451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_88
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 659
+        width: 105
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7ebc1bb713d0d47813ed10cc173f65
+      internalID: -1917699350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_89
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 652
+        width: 96
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0c3cda58e0769439e239ca581ae317
+      internalID: 1432382447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_90
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 652
+        width: 107
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de77a4f2f112bd84685b530c31533664
+      internalID: -562456021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_91
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 650
+        width: 113
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6bbbe75366cc2149b6fdbecbefa412e
+      internalID: 50215759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_92
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 650
+        width: 112
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22ce2fd6cca31647b1b4b23a5173b3d
+      internalID: 708095904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_93
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 655
+        width: 113
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e14d185db9e5c42abf8c2881a340fa
+      internalID: 1005359473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_94
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 649
+        width: 90
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f98c376a6a9650428305502e1ff1b33
+      internalID: 1554935482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_95
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 656
+        width: 111
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4b3249fda472b4e95fc88b286e02ff
+      internalID: 107689216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_96
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 526
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1477a85fe46867348bc867e146e87af9
+      internalID: 1964883191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_97
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 529
+        width: 108
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b23ec0fb140bcd47ad640f31ad3c5dc
+      internalID: 1065383905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_98
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 527
+        width: 107
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5690a824fe42b41bc2b2d43a16688d
+      internalID: -611210300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_99
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 530
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d692b9ba4c07ea747989265fbf6ed2e6
+      internalID: 1891046557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_100
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 530
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e56dc23b33ea94a9979411a185415d
+      internalID: -2003943663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_101
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 527
+        width: 105
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc999b77a40a9ff43b0466bd97a106b1
+      internalID: 1540356279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_102
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 529
+        width: 104
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f77c1a52eb80e749a0fe7caff8d512a
+      internalID: -103221945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_103
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 527
+        width: 100
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88019393998489c4f9afbbfd2f3eb8ca
+      internalID: 1802176968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_104
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 527
+        width: 106
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183b171d14dd1e8478b4aadab295766c
+      internalID: -1648928716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_105
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 531
+        width: 104
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363151948cc24e24196572a0d4b011df
+      internalID: -1799315289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_106
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 530
+        width: 101
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82cbdd5bf53f7747949e0f561c3b03b
+      internalID: 913756016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_107
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 523
+        width: 103
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cd459fc3494294ea96131018f8ee0c
+      internalID: -973854297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_108
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 399
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c75071f55640c4b9a030a41d70e7e8
+      internalID: -853695421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_109
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 398
+        width: 111
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6a4f129fe81704892f564355b92e13
+      internalID: 2133462550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_110
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 401
+        width: 95
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e65acd35931ae4dae5e6f37d8d1c8c
+      internalID: -547185796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_111
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 398
+        width: 114
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b779e7278c6f844b8e70888baedefe0
+      internalID: 34292179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_112
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 401
+        width: 114
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcde9d45799b6f4f98bf22092e6cc4a
+      internalID: -1411559685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_113
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 398
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242ee2814932e0f4b97592fc6392e8b1
+      internalID: 1490093503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_114
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 403
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcefbf1dfddb8f47958fe35b2f0a06f
+      internalID: 1489629310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_115
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 395
+        width: 112
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06ef10c4a036a344a6371ea0f56f1c7
+      internalID: -875230970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_116
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 395
+        width: 112
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89d931e3efb4d64589047482cbcba54
+      internalID: 2099318154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_117
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 393
+        width: 104
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2674216e5c11ff44ace9387283140be
+      internalID: -403875941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_118
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 398
+        width: 100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e608cd63687c49245a33fe61672c711e
+      internalID: -613163769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_119
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 396
+        width: 115
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da267005dd04fe0478d2a0b9e6e4926b
+      internalID: 28738761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_120
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 265
+        width: 107
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53a4210901493b41b73ca9d63d43c70
+      internalID: -645755307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_121
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 272
+        width: 114
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b9010f7ce30314da38fee16b321ab0
+      internalID: 117562657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_122
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 268
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8649239b3e03c488884a58a3b3f333
+      internalID: -1927956891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_123
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 272
+        width: 98
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0deb07bd72d909409686028f5164253
+      internalID: 446017741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_124
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 269
+        width: 105
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc307acce4c4a664aabf43f6f3f2b485
+      internalID: 1954843519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_125
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 267
+        width: 96
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58a05599b13bb54fb1ad02b955e7e0d
+      internalID: -24333175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_126
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 271
+        width: 98
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ece5ef6130e3e642a9c642101186978
+      internalID: 10498123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_127
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 267
+        width: 112
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0a60cf51ac0184e897adaf24254293
+      internalID: 1989491569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_128
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 270
+        width: 104
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ea726dbe7c8ef449a5f1f4911938c0
+      internalID: -237312395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_129
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 268
+        width: 110
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfa8931bbc64224995899d2f7876baa
+      internalID: -1398844950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_130
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 272
+        width: 102
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248ccb03dd04f834fad91802e191027b
+      internalID: 293311866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_131
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 277
+        width: 107
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20285516161968b4cbf1dc64c8ef9058
+      internalID: 914160427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_132
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 143
+        width: 122
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7e26e5e23df7e428916b28376e755e
+      internalID: -2014935982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_133
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 134
+        width: 110
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db07709b08a4a2e428913b9bda2d9f79
+      internalID: -252794058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_134
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 134
+        width: 113
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bef0b417dc06b24ea98e40d6d659577
+      internalID: -423358093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_135
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 137
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397d66035f27904498317701eb6893b9
+      internalID: -1205286583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_136
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 142
+        width: 108
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64600d2dc41734341afd77493fea3d5a
+      internalID: -1309066164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_137
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 147
+        width: 99
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33dd3ab5cc29c21448e077d09561dce5
+      internalID: 1101450886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_138
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 142
+        width: 105
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af03423b4fa35284e8d9244476f501d3
+      internalID: -780414105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_139
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 147
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3008e35a2667cd841808bd2cf86ac23c
+      internalID: 699439503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_140
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 143
+        width: 103
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7cdb3f3153ff59459c85c12e7716221
+      internalID: 640586407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_141
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 137
+        width: 108
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24f64ca431fecf448c2b0ae96691cdd
+      internalID: -887937349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_142
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 146
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbd4f19ff771a84888c7df7496fd76c
+      internalID: -506316815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_143
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 140
+        width: 97
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359b5ee5b38f5fd4a9241c93d497169c
+      internalID: -313727357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_144
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 7
+        width: 113
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9706a7ed6b0db4942bce5a9ffeacd572
+      internalID: 1806007150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_145
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 19
+        width: 102
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db39abaa1ed07e44b30294b9f805b48
+      internalID: -1052189767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_146
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 16
+        width: 103
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f231a49b20bfb47a85354e7e8f7489
+      internalID: -695195958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_147
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 12
+        width: 102
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef52ee216b6be74ba28c91a7cc6eeb2
+      internalID: -1906041176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_148
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 12
+        width: 106
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8514503c409c264fa0871a2702274ea
+      internalID: 883153972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_149
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 15
+        width: 97
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa6676aa64b2d749a27dce96e39e4ea
+      internalID: -1644971385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_150
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 15
+        width: 98
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9246bb98f64d9074fabf8b35ef6b90ba
+      internalID: -2122368249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_0: -226361212
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_1: -2114845129
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_10: 1178988938
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_100: -2003943663
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_101: 1540356279
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_102: -103221945
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_103: 1802176968
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_104: -1648928716
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_105: -1799315289
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_106: 913756016
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_107: -973854297
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_108: -853695421
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_109: 2133462550
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_11: 409736134
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_110: -547185796
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_111: 34292179
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_112: -1411559685
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_113: 1490093503
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_114: 1489629310
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_115: -875230970
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_116: 2099318154
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_117: -403875941
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_118: -613163769
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_119: 28738761
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_12: 717256075
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_120: -645755307
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_121: 117562657
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_122: -1927956891
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_123: 446017741
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_124: 1954843519
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_125: -24333175
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_126: 10498123
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_127: 1989491569
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_128: -237312395
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_129: -1398844950
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_13: -2060940304
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_130: 293311866
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_131: 914160427
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_132: -2014935982
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_133: -252794058
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_134: -423358093
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_135: -1205286583
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_136: -1309066164
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_137: 1101450886
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_138: -780414105
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_139: 699439503
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_14: -42436912
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_140: 640586407
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_141: -887937349
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_142: -506316815
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_143: -313727357
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_144: 1806007150
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_145: -1052189767
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_146: -695195958
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_147: -1906041176
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_148: 883153972
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_149: -1644971385
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_15: 1188440003
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_150: -2122368249
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_16: -1473366459
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_17: 591282634
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_18: 2025975485
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_19: 823730062
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_2: -311373352
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_20: 1009721714
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_21: 1713178080
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_22: -1481633838
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_23: 951269556
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_24: 561526833
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_25: 880305648
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_26: -1463608778
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_27: 1458825266
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_28: 1167465179
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_29: -1960505666
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_3: 484298424
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_30: 1855943476
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_31: -58205994
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_32: -503643226
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_33: 1244817941
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_34: -388573236
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_35: -1525465475
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_36: -1435012876
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_37: 739742149
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_38: -95788328
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_39: 1196457946
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_4: -1093307503
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_40: -418983807
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_41: 1384038850
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_42: 1088148136
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_43: 1040317740
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_44: 1952495153
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_45: 930934798
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_46: -1759253431
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_47: -1787318932
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_48: -435914525
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_49: 261050515
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_5: -1817502793
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_50: 910728668
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_51: 1824818237
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_52: 144486028
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_53: -1354760692
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_54: 526854690
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_55: 174607724
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_56: -1367491366
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_57: -1492701629
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_58: 1569481628
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_59: 955640346
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_6: -1739923606
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_60: 1917287210
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_61: 901471390
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_62: 1804219633
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_63: -1173177686
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_64: -1640293545
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_65: -884795540
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_66: 123328392
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_67: -996990735
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_68: -388977569
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_69: -1487354090
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_7: 975206430
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_70: -555660443
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_71: -78385771
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_72: -1248561117
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_73: -2118127808
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_74: 1934698691
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_75: -385893878
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_76: 1743863841
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_77: -1056342515
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_78: -402323695
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_79: -52968893
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_8: 649986543
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_80: 1813635783
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_81: -1822388918
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_82: 2101994185
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_83: 1750634463
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_84: 453231556
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_85: 1568772469
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_86: -2004835716
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_87: -1496056451
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_88: -1917699350
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_89: 1432382447
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_9: 662992934
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_90: -562456021
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_91: 50215759
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_92: 708095904
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_93: 1005359473
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_94: 1554935482
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_95: 107689216
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_96: 1964883191
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_97: 1065383905
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_98: -611210300
+      3DS - Pokemon Battle Trozei Pokemon Link Battle - Pokemon 1st Generation_99: 1891046557
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
