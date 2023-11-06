@@ -6,10 +6,17 @@ public class MouseController : MonoBehaviour
 {
     public bool _isPress;
     Rigidbody2D rb;
+    CircleCollider2D circleCollider;
+
+    private List<MouseController> _objectCheck = new List<MouseController>();
+
+    public bool _isMerge;
+    public int _id;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        circleCollider = GetComponent<CircleCollider2D>();
         _isPress = false;
     }
 
@@ -35,6 +42,7 @@ public class MouseController : MonoBehaviour
             mousePos.y = 12;
             mousePos.z = 0;
             transform.position = mousePos;
+
         }
     }
 
@@ -48,4 +56,62 @@ public class MouseController : MonoBehaviour
         _isPress = false;
         rb.simulated = true;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        MouseController otherMouse = collision.gameObject.GetComponent<MouseController>();
+
+        if (otherMouse != null && !_isMerge && !otherMouse._isMerge && _id < 7)
+        {
+            _objectCheck.Add(otherMouse);
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        for (int i = 0; i < _objectCheck.Count; i++)
+        {
+            var otherMouse = _objectCheck[i];
+
+            if (_id == otherMouse._id && !_isMerge && !otherMouse._isMerge && _id < 7)
+            {
+                float meX = transform.position.x;
+                float meY = transform.position.y;
+                float otherX = otherMouse.transform.position.x;
+                float otherY = otherMouse.transform.position.y;
+
+                if (meY < otherY || (meY == otherY && meX < otherX))
+                {
+                    _isMerge = true;
+
+                    rb.simulated = false;
+                    circleCollider.enabled = false;
+
+                    Destroy(otherMouse.gameObject);
+                    _id++;
+                    _objectCheck.Add(otherMouse);
+                }
+            }
+        }
+
+        foreach (var mouse in _objectCheck)
+        {
+            _objectCheck.Remove(mouse);
+        }
+    
+}
+
+        private void OnCollisionExit2D(Collision2D collision)
+    {
+        MouseController otherMouse = collision.gameObject.GetComponent<MouseController>();
+
+        if (otherMouse != null)
+        {
+            _objectCheck.Remove(otherMouse);
+        }
+    }
+
+
+
+
 }

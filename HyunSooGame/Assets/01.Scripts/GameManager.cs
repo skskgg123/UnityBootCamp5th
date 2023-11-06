@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(2.3f);
+        yield return new WaitForSeconds(1.8f);
 
         NextObject();
     }
