@@ -69,6 +69,8 @@ public class MouseController : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
+        List<MouseController> toRemove = new List<MouseController>();
+
         for (int i = 0; i < _objectCheck.Count; i++)
         {
             var otherMouse = _objectCheck[i];
@@ -85,23 +87,23 @@ public class MouseController : MonoBehaviour
                     _isMerge = true;
 
                     rb.simulated = false;
-                    circleCollider.enabled = false;
+                    //circleCollider.enabled = false;
 
                     Destroy(otherMouse.gameObject);
+                    Destroy(gameObject);
                     _id++;
-                    _objectCheck.Add(otherMouse);
+                    toRemove.Add(otherMouse);
                 }
             }
         }
 
-        foreach (var mouse in _objectCheck)
+        foreach (var mouse in toRemove)
         {
             _objectCheck.Remove(mouse);
         }
-    
-}
+    }
 
-        private void OnCollisionExit2D(Collision2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         MouseController otherMouse = collision.gameObject.GetComponent<MouseController>();
 
