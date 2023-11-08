@@ -8,7 +8,7 @@ public class MouseController : MonoBehaviour
     Rigidbody2D rb;
     CircleCollider2D circleCollider;
 
-    private List<MouseController> _objectCheck = new List<MouseController>();
+    private List<MouseController> touchedObjects = new List<MouseController>(); // 충돌한 물체를 담는 리스트
 
     public bool _isMerge;
     public int _id;
@@ -63,17 +63,15 @@ public class MouseController : MonoBehaviour
 
         if (otherMouse != null && !_isMerge && !otherMouse._isMerge && _id < 7)
         {
-            _objectCheck.Add(otherMouse);
+            touchedObjects.Add(otherMouse); // 충돌한 물체를 리스트에 추가
         }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        List<MouseController> toRemove = new List<MouseController>();
-
-        for (int i = 0; i < _objectCheck.Count; i++)
+        for (int i = 0; i < touchedObjects.Count; i++)
         {
-            var otherMouse = _objectCheck[i];
+            var otherMouse = touchedObjects[i];
 
             if (_id == otherMouse._id && !_isMerge && !otherMouse._isMerge && _id < 7)
             {
@@ -92,15 +90,11 @@ public class MouseController : MonoBehaviour
                     Destroy(otherMouse.gameObject);
                     Destroy(gameObject);
                     _id++;
-                    toRemove.Add(otherMouse);
+                    touchedObjects.Remove(otherMouse); // 충돌이 끝난 물체를 리스트에서 제거
                 }
             }
         }
 
-        foreach (var mouse in toRemove)
-        {
-            _objectCheck.Remove(mouse);
-        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -109,11 +103,59 @@ public class MouseController : MonoBehaviour
 
         if (otherMouse != null)
         {
-            _objectCheck.Remove(otherMouse);
+            touchedObjects.Remove(otherMouse); // 충돌이 끝난 물체를 리스트에서 제거
+        }
+    }
+
+    private void CircleTangentPoint()
+    {
+        Vector3 CalculateTangentPoint(List<MouseController> collidedObjects)
+        {
+            // 내접 지점을 초기화합니다.
+            Vector3 tangentPoint = Vector3.zero;
+
+            // 가장 큰 반지름 합을 초기화합니다.
+            float maxRadiusSum = 0;
+
+            // 충돌한 원들 중에서 내접할 수 있는 원을 찾아서 반지름 합이 가장 큰 원을 선택합니다.
+            foreach (var obj in collidedObjects)
+            {
+                // obj가 현재 원(this)과 내접 가능하며, 머지되지 않은 상태일 때
+                if (obj._id == _id && !obj._isMerge && !_isMerge)
+                {
+                    // 두 원의 반지름 합을 계산합니다.
+                    float radiusSum = obj.circleCollider.radius + circleCollider.radius;
+
+                    // 기존에 찾은 원들 중에서 가장 큰 반지름 합을 갱신하고
+                    // 해당 원들의 중심을 평균 내접 지점으로 설정합니다.
+                    if (radiusSum > maxRadiusSum)
+                    {
+                        maxRadiusSum = radiusSum;
+                        tangentPoint = (obj.transform.position + transform.position) / 2f;
+                    }
+                }
+            }
+
+            // 가장 큰 반지름 합을 가진 원들의 내접 지점을 반환합니다.
+            return tangentPoint;
+
+
+
         }
     }
 
 
+    void CreateNewMouse()
+    {
+        void CreateNewMouse(Vector3 position)
+        {
+            // 내접 지점에 새로운 원을 생성
+            GameObject newMouseObject = Instantiate(gameObject, position, Quaternion.identity);
+            MouseController newMouse = newMouseObject.GetComponent<MouseController>();
+            newMouse._isMerge = false; // 새 원은 머지되지 않음
+            newMouse._id = _id; // 같은 ID를 사용
 
-
+            // 레벨 매니저나 게임 매니저 등에서 새 원을 관리하는 로직을 추가할 수 있음
+        }
+    }
 }
