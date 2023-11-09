@@ -2,31 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManagerTest : MonoBehaviour
 {
     
-    public MouseController _object;
+    public MouseControllerTest _object;
     public GameObject[] _objectPrefab;
     //public Transform _objectTransform;
-    
+    public List<GameObject> _objectPrefabList;
 
     private void Start()
     {
         NextObject();
     }
 
-    MouseController GetObject(int id)
+    MouseControllerTest GetObject(int id)
     {
         Vector3 mousePos = new Vector3(0, 12, 0);
         GameObject instant = Instantiate(_objectPrefab[id], mousePos, Quaternion.identity);
-        MouseController mouseController = instant.GetComponent<MouseController>();
+        MouseControllerTest mouseController = instant.GetComponent<MouseControllerTest>();
         return mouseController;
     }
 
     void NextObject()
     {
         int randomIndex = Random.Range(0, 4); // 0 이상 3 이하의 랜덤 인덱스 생성
-        MouseController newObject = GetObject(randomIndex);
+        MouseControllerTest newObject = GetObject(randomIndex);
         _object = newObject;
 
         StartCoroutine(WaitNext());
