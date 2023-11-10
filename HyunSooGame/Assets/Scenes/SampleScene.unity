@@ -133,8 +133,9 @@ GameObject:
   m_Component:
   - component: {fileID: 144794537}
   - component: {fileID: 144794538}
+  - component: {fileID: 144794539}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: MouseController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,21 +165,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 144794536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71dbcf1ea693d8640ad615e566f0d689, type: 3}
+  m_Script: {fileID: 11500000, guid: a26e54114fc29f9419c41c6e12860940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _object: {fileID: 6362521403284537786, guid: bba327de37879b54ba0e20ad3d45d357, type: 3}
-  _objectPrefab:
+  isDrag: 0
+--- !u!114 &144794539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144794536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6e8009578c788c42ae21b2a76d6cc9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemonList:
   - {fileID: 6362521403284537788, guid: bba327de37879b54ba0e20ad3d45d357, type: 3}
   - {fileID: 6362521403284537788, guid: 6c4f1f832bbfcd54b888eff553ad1e8a, type: 3}
   - {fileID: 6362521403284537788, guid: fd23f9a5c4634144db64b1f5ab1da71f, type: 3}
   - {fileID: 6362521403284537788, guid: 88363ca23c21e914b8fd5e1fa225945a, type: 3}
   - {fileID: 6362521403284537788, guid: 8acc2f29b2d2fbc408890878a3329fc0, type: 3}
   - {fileID: 6362521403284537788, guid: 94eaaf3d588ff394185212116dc3346a, type: 3}
-  _objectPrefabList:
-  - {fileID: 6362521403284537788, guid: bba327de37879b54ba0e20ad3d45d357, type: 3}
-  - {fileID: 6362521403284537788, guid: 6c4f1f832bbfcd54b888eff553ad1e8a, type: 3}
-  - {fileID: 6362521403284537788, guid: fd23f9a5c4634144db64b1f5ab1da71f, type: 3}
+  - {fileID: 6362521403284537788, guid: 26e76ba3edd29ed46bca64a71d8c8c3a, type: 3}
+  - {fileID: 6362521403284537788, guid: b059aa3dcb07c2c4999080a1a2f60ea9, type: 3}
+  - {fileID: 6362521403284537788, guid: a01f3ffb3a3e0dc45a9fdb59e61dccd2, type: 3}
+  - {fileID: 6362521403284537788, guid: a09f958b6b95ba846bb3383dbd55a986, type: 3}
 --- !u!1 &463468773
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,8 +371,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 144794538}
-          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-          m_MethodName: TouchDown
+          m_TargetAssemblyTypeName: MouseController, Assembly-CSharp
+          m_MethodName: Press
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -374,8 +387,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 144794538}
-          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-          m_MethodName: TouchUp
+          m_TargetAssemblyTypeName: MouseController, Assembly-CSharp
+          m_MethodName: Put
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

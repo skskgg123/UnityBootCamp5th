@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6362521403284537790}
   - component: {fileID: 6362521403284537791}
+  - component: {fileID: 5041073250852917364}
   - component: {fileID: 6362521403284537784}
   - component: {fileID: 6362521403284537787}
-  - component: {fileID: 6362521403284537786}
   - component: {fileID: 2169957051747008885}
   m_Layer: 0
   m_Name: 09. Object
@@ -88,6 +88,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5041073250852917364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6362521403284537788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ecdaabe2cc9b47488e344f67cd2b49c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 8
+  isMerge: 0
 --- !u!58 &6362521403284537784
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -150,22 +164,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6362521403284537786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6362521403284537788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 395e21be7ecbef34991a607bb09e799c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isPress: 0
-  mousePrefab: {fileID: 0}
-  _isMerge: 0
-  _id: 3
 --- !u!95 &2169957051747008885
 Animator:
   serializedVersion: 5

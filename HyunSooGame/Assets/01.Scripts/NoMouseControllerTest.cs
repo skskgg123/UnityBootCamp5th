@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -9,19 +9,17 @@ public class MouseControllerTest : MonoBehaviour
     Rigidbody2D rb;
     CircleCollider2D circleCollider;
 
-    private List<MouseControllerTest> touched = new List<MouseControllerTest>(); // 충돌한 물체를 담는 리스트
+    
 
     public MouseControllerTest mousePrefab; // 미리 만들어 둔 MouseController 프리팹
     //private List<MouseController> allObject = new List<MouseController>(); // 모든 프리팹을 저장할 리스트
 
-    public bool _isMerge;
+    //public bool _isMerge;
     public int _id;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
-        circleCollider = GetComponent<CircleCollider2D>();
-        _isPress = false;
+
     }
 
     // Update is called once per frame
@@ -30,7 +28,7 @@ public class MouseControllerTest : MonoBehaviour
         if ( _isPress)
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            CreateNewMouse(mousePos);
+            //CreateNewMouse(mousePos);
             float leftBorder = -8.7f + transform.localScale.x / 2f;
             float rightBorder = 7.3f + transform.localScale.x / 2f;
 
@@ -64,15 +62,10 @@ public class MouseControllerTest : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        MouseControllerTest otherMouse = collision.gameObject.GetComponent<MouseControllerTest>();
-
-        if (otherMouse != null && !_isMerge && !otherMouse._isMerge && _id < 7)
-        {
-            touched.Add(otherMouse); // 충돌한 물체를 리스트에 추가
-        }
+        
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    /*private void OnCollisionStay2D(Collision2D collision)
     {
         for (int i = 0; i < touched.Count; i++)
         {
@@ -133,7 +126,7 @@ public class MouseControllerTest : MonoBehaviour
                 tangentPoint = (sub.transform.position + position) / 2f;
             }
         }
-
+j
         // 가장 큰 반지름 합을 가진 원들의 내접 지점을 반환
         return tangentPoint;
 
@@ -153,5 +146,5 @@ public class MouseControllerTest : MonoBehaviour
         // 생성된 마우스를 리스트에 추가
         touched.Add(newMouse);
 
-    }
-}
+    }*/
+

@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -61,11 +61,11 @@ public class GameManagerTest : MonoBehaviour
         _object = null;
     }
 
-    public void NextMerge(int id)
+    /*public void NextMerge(int id)
     {
         if (_object._isMerge)
         {
             Instantiate(_objectPrefab[id]);
         }
-    }
-}
+    }*/
+
