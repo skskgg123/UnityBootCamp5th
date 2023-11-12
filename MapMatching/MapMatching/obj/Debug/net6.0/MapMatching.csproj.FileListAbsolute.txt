@@ -1,0 +1,14 @@
+C:\Users\HyunSoo\source\repos\MapMatching\MapMatching\bin\Debug\net6.0\MapMatching.exe
+C:\Users\HyunSoo\source\repos\MapMatching\MapMatching\bin\Debug\net6.0\MapMatching.deps.json
+C:\Users\HyunSoo\source\repos\MapMatching\MapMatching\bin\Debug\net6.0\MapMatching.runtimeconfig.json
+C:\Users\HyunSoo\source\repos\MapMatching\MapMatching\bin\Debug\net6.0\MapMatching.dll
+C:\Users\HyunSoo\source\repos\MapMatching\MapMatching\bin\Debug\net6.0\MapMatching.pdb
+C:\Users\HyunSoo\source\repos\MapMatching\MapMatching\obj\Debug\net6.0\MapMatching.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HyunSoo\source\repos\MapMatching\MapMatching\obj\Debug\net6.0\MapMatching.AssemblyInfoInputs.cache
+C:\Users\HyunSoo\source\repos\MapMatching\MapMatching\obj\Debug\net6.0\MapMatching.AssemblyInfo.cs
+C:\Users\HyunSoo\source\repos\MapMatching\MapMatching\obj\Debug\net6.0\MapMatching.csproj.CoreCompileInputs.cache
+C:\Users\HyunSoo\source\repos\MapMatching\MapMatching\obj\Debug\net6.0\MapMatching.dll
+C:\Users\HyunSoo\source\repos\MapMatching\MapMatching\obj\Debug\net6.0\refint\MapMatching.dll
+C:\Users\HyunSoo\source\repos\MapMatching\MapMatching\obj\Debug\net6.0\MapMatching.pdb
+C:\Users\HyunSoo\source\repos\MapMatching\MapMatching\obj\Debug\net6.0\MapMatching.genruntimeconfig.cache
+C:\Users\HyunSoo\source\repos\MapMatching\MapMatching\obj\Debug\net6.0\ref\MapMatching.dll
