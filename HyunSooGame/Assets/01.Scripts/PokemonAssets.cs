@@ -10,10 +10,11 @@ public class PokemonAssets : MonoBehaviour
 
     public static PokemonAssets Instance => _instance;
 
+
     // Dictionary를 사용하여 ID로 Pokemon 객체를 찾음
     private Dictionary<int, Pokemon> pokemonID = new Dictionary<int, Pokemon>();
 
-    public List<GameObject> pokemonList = new List<GameObject>();
+    public List<Pokemon> pokemonList = new List<Pokemon>();
 
     private void Awake()
     {
@@ -30,21 +31,52 @@ public class PokemonAssets : MonoBehaviour
         ToPokemonList();
     }
 
-    //딕션어리 사옹해서 id값으로 vlaue값찾기 키-값 
-    private void ToPokemonList()
+    public void PokemonRigidbody(int id)
     {
+        Pokemon pokemon = GetPokemonById(id);
+
+        if (pokemon != null)
+        {
+            Rigidbody2D pokemonRigidbody = pokemon.GetComponent<Rigidbody2D>();
+            if (pokemonRigidbody != null)
+            {
+                pokemonRigidbody.simulated = true;
+            }
+            else
+            {
+                Debug.LogError("리지드바디가 없습니다.");
+            }
+        }
+        else
+        {
+            Debug.LogError("해당 ID의 포켓몬이 없습니다.");
+        }
+    }
+
+    //딕션어리 사옹해서 id값으로 vlaue값찾기 키-값 
+    public void ToPokemonList()
+    {
+        if (pokemonList == null)
+        {
+            Debug.LogError("pokemonList is null");
+            return;
+        }
+
         for (int i = 0; i < pokemonList.Count; i++)
         {
-            GameObject pokemonPrefab = pokemonList[i];
+            Pokemon pokemonPrefab = pokemonList[i];
 
             // 각 프리팹에 ID 컴포넌트를 추가하고 값을 할당
             Pokemon pokemon = pokemonPrefab.GetComponent<Pokemon>();
+
+
             if (pokemon != null)
             {
                 pokemon.id = i;
 
                 // 딕셔너리에 ID와 Pokemon 객체를 추가
                 pokemonID.Add(i, pokemon);
+                
             }
             else
             {

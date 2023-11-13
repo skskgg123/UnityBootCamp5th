@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
@@ -5,7 +6,7 @@ using UnityEngine;
 
 public class Pokemon : MonoBehaviour
 {
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
     CircleCollider2D pokeCollider;
     public int id;
 
@@ -16,10 +17,24 @@ public class Pokemon : MonoBehaviour
 
     public bool isMerge;
 
+    public bool isStopped
+    {
+        get => _isStopped;
+        set
+        {
+            _isStopped = value;
+            if (_isStopped)
+                onStopped?.Invoke();
+        }
+    }
+    private bool _isStopped;
+    public Action onStopped;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 144794537}
   - component: {fileID: 144794538}
-  - component: {fileID: 144794539}
   m_Layer: 0
   m_Name: MouseController
   m_TagString: Untagged
@@ -168,30 +167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a26e54114fc29f9419c41c6e12860940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDrag: 0
---- !u!114 &144794539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 144794536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6e8009578c788c42ae21b2a76d6cc9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pokemonList:
-  - {fileID: 6362521403284537788, guid: bba327de37879b54ba0e20ad3d45d357, type: 3}
-  - {fileID: 6362521403284537788, guid: 6c4f1f832bbfcd54b888eff553ad1e8a, type: 3}
-  - {fileID: 6362521403284537788, guid: fd23f9a5c4634144db64b1f5ab1da71f, type: 3}
-  - {fileID: 6362521403284537788, guid: 88363ca23c21e914b8fd5e1fa225945a, type: 3}
-  - {fileID: 6362521403284537788, guid: 8acc2f29b2d2fbc408890878a3329fc0, type: 3}
-  - {fileID: 6362521403284537788, guid: 94eaaf3d588ff394185212116dc3346a, type: 3}
-  - {fileID: 6362521403284537788, guid: 26e76ba3edd29ed46bca64a71d8c8c3a, type: 3}
-  - {fileID: 6362521403284537788, guid: b059aa3dcb07c2c4999080a1a2f60ea9, type: 3}
-  - {fileID: 6362521403284537788, guid: a01f3ffb3a3e0dc45a9fdb59e61dccd2, type: 3}
-  - {fileID: 6362521403284537788, guid: a09f958b6b95ba846bb3383dbd55a986, type: 3}
 --- !u!1 &463468773
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,9 +345,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 144794538}
+        - m_Target: {fileID: 144794536}
           m_TargetAssemblyTypeName: MouseController, Assembly-CSharp
-          m_MethodName: Press
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -496,6 +471,61 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931437942}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1295150478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1295150480}
+  - component: {fileID: 1295150479}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1295150479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295150478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6e8009578c788c42ae21b2a76d6cc9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemonList:
+  - {fileID: 7954258152339300935, guid: bba327de37879b54ba0e20ad3d45d357, type: 3}
+  - {fileID: 7021661886593777117, guid: 6c4f1f832bbfcd54b888eff553ad1e8a, type: 3}
+  - {fileID: 6730908906289382671, guid: fd23f9a5c4634144db64b1f5ab1da71f, type: 3}
+  - {fileID: 6454796871498045510, guid: 88363ca23c21e914b8fd5e1fa225945a, type: 3}
+  - {fileID: 7965723763123454536, guid: 8acc2f29b2d2fbc408890878a3329fc0, type: 3}
+  - {fileID: 2999953459463304748, guid: 94eaaf3d588ff394185212116dc3346a, type: 3}
+  - {fileID: 2464541766439007409, guid: 26e76ba3edd29ed46bca64a71d8c8c3a, type: 3}
+  - {fileID: 1650777714576139497, guid: b059aa3dcb07c2c4999080a1a2f60ea9, type: 3}
+  - {fileID: 5041073250852917364, guid: a01f3ffb3a3e0dc45a9fdb59e61dccd2, type: 3}
+  - {fileID: 5311281147195056814, guid: a09f958b6b95ba846bb3383dbd55a986, type: 3}
+--- !u!4 &1295150480
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295150478}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -1030,13 +1060,62 @@ Transform:
   - {fileID: 1315125576}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2011576100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2011576102}
+  - component: {fileID: 2011576101}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2011576101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011576100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8fed99b2d1d9df42917d7c46a8478f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  last: {fileID: 0}
+  spawnPoint: {x: 0, y: 12, z: 0}
+  id: 0
+--- !u!4 &2011576102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011576100}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1295150480}
   - {fileID: 144794537}
   - {fileID: 463468774}
   - {fileID: 519420032}
   - {fileID: 1923849409}
   - {fileID: 1487510045}
   - {fileID: 931437945}
+  - {fileID: 2011576102}

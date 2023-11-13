@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ecdaabe2cc9b47488e344f67cd2b49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 6362521403284537787}
   id: 4
   isMerge: 0
 --- !u!95 &2169957051747008885
