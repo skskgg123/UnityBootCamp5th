@@ -8,12 +8,32 @@ public class Spawner : MonoBehaviour
     public Vector3 spawnPoint;
     public int id;
 
+    private Vector3 mousePos;
+
     private void Update()
     {
         if (last == null)
         {
             id = Random.Range(0, 3);
             SpawnNewPokemon();
+        }
+        
+        if (last._isDrag)
+        {
+            mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePos.z = 0;
+            mousePos.y = 12;
+            
+
+            if (mousePos.x < last.leftBorder)
+            {
+                mousePos.x = last.leftBorder;
+            }
+            else if (mousePos.x > last.rightBorder)
+            {
+                mousePos.x = last.rightBorder;
+            }
+            last.transform.position = mousePos;
         }
     }
 
@@ -25,6 +45,18 @@ public class Spawner : MonoBehaviour
             last.onStopped = null;
             last = Instantiate(PokemonAssets.Instance.pokemonList[id], spawnPoint, Quaternion.identity);
         };
+
+
+    }
+
+    public void MouseDrag()
+    {
+        last.Drag();
+    }
+
+    public void MouseUp()
+    {
+        last.Drop();
     }
 
 }

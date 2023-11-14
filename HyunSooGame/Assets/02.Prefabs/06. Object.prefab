@@ -102,6 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 6362521403284537787}
   id: 5
+  _isDrag: 0
   isMerge: 0
 --- !u!58 &6362521403284537784
 CircleCollider2D:
@@ -147,7 +148,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6362521403284537788}
   m_BodyType: 0
-  m_Simulated: 0
+  m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1

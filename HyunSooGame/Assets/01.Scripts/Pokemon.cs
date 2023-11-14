@@ -9,6 +9,10 @@ public class Pokemon : MonoBehaviour
     public Rigidbody2D rb;
     CircleCollider2D pokeCollider;
     public int id;
+    public bool _isDrag;
+
+    [SerializeField] public float leftBorder; 
+    [SerializeField] public float rightBorder;
 
     //public int Id => _id;
     //[SerializeField] private int _id;
@@ -33,8 +37,22 @@ public class Pokemon : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.gravityScale = 0.0f;
+
+
     }
 
+    public void Drag()
+    {
+        _isDrag = true;
+        rb.gravityScale = 0.0f;
+    }
+
+    public void Drop()
+    {
+        _isDrag = false;
+        rb.gravityScale = 6.0f;
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -46,6 +64,7 @@ public class Pokemon : MonoBehaviour
             touched.Add(ohterPokemon);
         }
     }
+
 
     private void OnCollisionStay2D(Collision2D collision)
     {
