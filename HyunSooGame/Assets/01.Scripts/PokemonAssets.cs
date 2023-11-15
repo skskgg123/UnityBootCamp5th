@@ -62,6 +62,8 @@ public class PokemonAssets : MonoBehaviour
             return;
         }
 
+
+
         for (int i = 0; i < pokemonList.Count; i++)
         {
             Pokemon pokemonPrefab = pokemonList[i];

@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1958076561
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 50215759, guid: dc4afbb50b250c4439df0f440359cbcb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -103,6 +103,15 @@ MonoBehaviour:
   rb: {fileID: 6362521403284537787}
   id: 5
   _isDrag: 0
+  _isDrop: 0
+  _ground:
+    serializedVersion: 2
+    m_Bits: 0
+  _otherPokemon:
+    serializedVersion: 2
+    m_Bits: 0
+  leftBorder: 0
+  rightBorder: 0
   isMerge: 0
 --- !u!58 &6362521403284537784
 CircleCollider2D:
@@ -154,7 +163,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 6
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

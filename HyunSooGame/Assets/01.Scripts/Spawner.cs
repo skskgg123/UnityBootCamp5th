@@ -7,14 +7,14 @@ public class Spawner : MonoBehaviour
     public Pokemon last;
     public Vector3 spawnPoint;
     public int id;
+    
 
     private Vector3 mousePos;
 
     private void Update()
     {
         if (last == null)
-        {
-            id = Random.Range(0, 3);
+        { 
             SpawnNewPokemon();
         }
         
@@ -39,24 +39,33 @@ public class Spawner : MonoBehaviour
 
     private void SpawnNewPokemon()
     {
+        id = Random.Range(0, 3);
         last = Instantiate(PokemonAssets.Instance.pokemonList[id], spawnPoint, Quaternion.identity);
-        last.onStopped = () =>
+        /*last.onStopped = () =>
         {
             last.onStopped = null;
+
             last = Instantiate(PokemonAssets.Instance.pokemonList[id], spawnPoint, Quaternion.identity);
-        };
-
-
+        };    */
     }
 
     public void MouseDrag()
     {
+        if (last == null)
+            return;
+
         last.Drag();
     }
 
     public void MouseUp()
     {
+        if (last == null)
+            return;
         last.Drop();
-    }
 
+
+        last = null;
+
+    }
+    
 }

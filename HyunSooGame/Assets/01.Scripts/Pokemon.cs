@@ -10,6 +10,10 @@ public class Pokemon : MonoBehaviour
     CircleCollider2D pokeCollider;
     public int id;
     public bool _isDrag;
+    public bool _isDrop;
+
+    [SerializeField] public LayerMask _ground;
+    [SerializeField] public LayerMask _otherPokemon;
 
     [SerializeField] public float leftBorder; 
     [SerializeField] public float rightBorder;
@@ -37,9 +41,7 @@ public class Pokemon : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0.0f;
-
-
+        rb.gravityScale = 0f;
     }
 
     public void Drag()
@@ -51,7 +53,17 @@ public class Pokemon : MonoBehaviour
     public void Drop()
     {
         _isDrag = false;
-        rb.gravityScale = 6.0f;
+        rb.gravityScale = 1f;
+        rb.velocity += new Vector2(0, -30);
+    }
+
+    private void Update()
+    {
+        // 벨로시티의 y값이 0이 되면 isStopped를 true로 설정하여 새로운 프리팹 생성
+        if (rb.velocity.y <= 0f)
+        {
+            isStopped = true;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -63,6 +75,8 @@ public class Pokemon : MonoBehaviour
         {
             touched.Add(ohterPokemon);
         }
+        
+
     }
 
 
@@ -77,7 +91,20 @@ public class Pokemon : MonoBehaviour
             Destroy(ohterPokemon.gameObject);
             Destroy(gameObject);
             id++;
+
+            // 다음 ID의 Pokemon 생성 
+            Pokemon nextPokemon = Instantiate(PokemonAssets.Instance.GetPokemonById(id), this.transform.position, Quaternion.identity);
+            nextPokemon.rb.gravityScale = 1f;
+            
         }
+
+        
+        
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+
     }
 
 }

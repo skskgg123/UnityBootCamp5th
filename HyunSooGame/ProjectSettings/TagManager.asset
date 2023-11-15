@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 1475104395
+    locked: 0
+  - name: Pokemon
+    uniqueID: 2336890735
+    locked: 0
