@@ -40,7 +40,9 @@ public class Spawner : MonoBehaviour
     private void SpawnNewPokemon()
     {
         id = Random.Range(0, 3);
+        
         last = Instantiate(PokemonAssets.Instance.pokemonList[id], spawnPoint, Quaternion.identity);
+        last.rb.gravityScale = 0;
         /*last.onStopped = () =>
         {
             last.onStopped = null;

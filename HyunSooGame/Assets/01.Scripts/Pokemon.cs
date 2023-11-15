@@ -41,7 +41,7 @@ public class Pokemon : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0f;
+        //rb.gravityScale = 0f;
     }
 
     public void Drag()
@@ -93,9 +93,11 @@ public class Pokemon : MonoBehaviour
             id++;
 
             // 다음 ID의 Pokemon 생성 
-            Pokemon nextPokemon = Instantiate(PokemonAssets.Instance.GetPokemonById(id), this.transform.position, Quaternion.identity);
-            nextPokemon.rb.gravityScale = 1f;
-            
+            //Pokemon nextPokemon = Instantiate(PokemonAssets.Instance.GetPokemonById(id), this.transform.position, Quaternion.identity);
+            //nextPokemon.rb.gravityScale = 1f;
+            CreateNewPokemon(transform.position);
+
+
         }
 
         
@@ -107,4 +109,51 @@ public class Pokemon : MonoBehaviour
 
     }
 
+    private Vector3 FindTangentPoint(Vector3 position)
+    {
+        Vector3 tangentPoint = Vector3.zero;
+        float maxRadiusSum = 0;
+
+        foreach (var otherPokemon in touched)
+        {
+            if (otherPokemon == null || otherPokemon.pokeCollider == null)
+                continue;
+
+            float radiusSum = otherPokemon.pokeCollider.radius + pokeCollider.radius;
+
+            if (radiusSum > maxRadiusSum)
+            {
+                maxRadiusSum = radiusSum;
+
+                // 두 원의 중점을 구합니다.
+                Vector3 center1 = otherPokemon.transform.position;
+                Vector3 center2 = position;
+
+                // 내접점을 찾습니다.
+                float d = Vector3.Distance(center1, center2);
+                float a = (radiusSum - otherPokemon.pokeCollider.radius + pokeCollider.radius) / 2;
+                float h = Mathf.Sqrt(radiusSum * radiusSum - a * a);
+
+                // 내접점의 좌표를 계산합니다.
+                Vector3 direction = (center2 - center1).normalized;
+                tangentPoint = center1 + direction * (a + h);
+
+            }
+        }
+
+        return tangentPoint;
+    }
+
+    void CreateNewPokemon(Vector3 position)
+    {
+        // 내접 지점 찾기
+        Vector3 tangentPoint = FindTangentPoint(position);
+
+        // 새로운 포켓몬 생성
+        Pokemon newPokemonObject = Instantiate(PokemonAssets.Instance.GetPokemonById(id), tangentPoint, Quaternion.identity);
+        Pokemon newPokemon = newPokemonObject.GetComponent<Pokemon>();
+
+        // 생성된 포켓몬을 touched 리스트에 추가
+        touched.Add(newPokemon);
+    }
 }
