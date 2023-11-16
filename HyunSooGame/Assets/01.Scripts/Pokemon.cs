@@ -41,6 +41,7 @@ public class Pokemon : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        pokeCollider = GetComponent<CircleCollider2D>();
         //rb.gravityScale = 0f;
     }
 
@@ -95,8 +96,8 @@ public class Pokemon : MonoBehaviour
             // 다음 ID의 Pokemon 생성 
             //Pokemon nextPokemon = Instantiate(PokemonAssets.Instance.GetPokemonById(id), this.transform.position, Quaternion.identity);
             //nextPokemon.rb.gravityScale = 1f;
-            CreateNewPokemon(transform.position);
-
+            //CreateNewPokemon(this.transform.position);
+            FindAndCreateTangent();
 
         }
 
@@ -106,54 +107,87 @@ public class Pokemon : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
+        // 다른 포켓몬 오브젝트 받기
+        Pokemon otherPokemon = collision.gameObject.GetComponent<Pokemon>();
 
+        // 콜라이더가 닿지 않은 경우 리스트에서 제거
+        if (otherPokemon != null)
+        {
+            touched.Remove(otherPokemon);
+        }
     }
 
-    private Vector3 FindTangentPoint(Vector3 position)
+    private void FindAndCreateTangent()
     {
-        Vector3 tangentPoint = Vector3.zero;
-        float maxRadiusSum = 0;
-
         foreach (var otherPokemon in touched)
         {
-            if (otherPokemon == null || otherPokemon.pokeCollider == null)
-                continue;
+            Vector3 tangentPoint;
+            float tangentRadius;
 
-            float radiusSum = otherPokemon.pokeCollider.radius + pokeCollider.radius;
-
-            if (radiusSum > maxRadiusSum)
+            if (CalculateTangentPoint(this, otherPokemon, out tangentPoint, out tangentRadius))
             {
-                maxRadiusSum = radiusSum;
-
-                // 두 원의 중점을 구합니다.
-                Vector3 center1 = otherPokemon.transform.position;
-                Vector3 center2 = position;
-
-                // 내접점을 찾습니다.
-                float d = Vector3.Distance(center1, center2);
-                float a = (radiusSum - otherPokemon.pokeCollider.radius + pokeCollider.radius) / 2;
-                float h = Mathf.Sqrt(radiusSum * radiusSum - a * a);
-
-                // 내접점의 좌표를 계산합니다.
-                Vector3 direction = (center2 - center1).normalized;
-                tangentPoint = center1 + direction * (a + h);
-
+                // 내접 지점에서 새로운 포켓몬 생성
+                CreateNewPokemon(tangentPoint, tangentRadius);
             }
         }
 
-        return tangentPoint;
+        // 리스트에 없는 경우 다음 단계의 포켓몬 생성
+        CreateNewPokemon(this.transform.position, pokeCollider.radius);
     }
 
-    void CreateNewPokemon(Vector3 position)
+    private bool CalculateTangentPoint(Pokemon pokemon1, Pokemon pokemon2, out Vector3 tangentPoint, out float tangentRadius)
     {
-        // 내접 지점 찾기
-        Vector3 tangentPoint = FindTangentPoint(position);
+        tangentPoint = Vector3.zero;
+        tangentRadius = 0f;
 
-        // 새로운 포켓몬 생성
-        Pokemon newPokemonObject = Instantiate(PokemonAssets.Instance.GetPokemonById(id), tangentPoint, Quaternion.identity);
-        Pokemon newPokemon = newPokemonObject.GetComponent<Pokemon>();
+        float d = Vector3.Distance(pokemon1.transform.position, pokemon2.transform.position);
+        float r1 = pokemon1.pokeCollider.radius;
+        float r2 = pokemon2.pokeCollider.radius;
 
-        // 생성된 포켓몬을 touched 리스트에 추가
-        touched.Add(newPokemon);
+        // 두 원이 만나지 않는 경우
+        if (d > r1 + r2)
+        {
+            return false;
+        }
+
+        // 두 원이 동심원인 경우
+        if (d < Mathf.Abs(r1 - r2))
+        {
+            return false;
+        }
+
+        // 외접 지점과 반지름 계산
+        float a = (r1 * r1 + r2 * r2 + d * d) / (2 * d);
+        float h = Mathf.Sqrt(r1 * r1 - a * a);
+
+        // 외접 지점 계산
+        Vector3 direction = (pokemon2.transform.position - pokemon1.transform.position).normalized;
+        tangentPoint = pokemon1.transform.position + direction * a - direction.normalized * h;
+
+        // 외접한 반지름 계산
+        tangentRadius = r1 + r2 - a;
+
+        return true;
+    }
+
+    void CreateNewPokemon(Vector3 position, float tangentRadius)
+    {
+
+        // 프리팹을 가져옴
+        Pokemon newPokemonPrefab = PokemonAssets.Instance.GetPokemonById(id);
+
+        // 프리팹이 존재하면 생성
+        if (newPokemonPrefab != null)
+        {
+            // 새로운 포켓몬 생성
+            Pokemon newPokemonObject = Instantiate(newPokemonPrefab, position, Quaternion.identity);
+            Pokemon newPokemon = newPokemonObject.GetComponent<Pokemon>();
+
+        }
+        else
+        {
+            Debug.LogError($"Prefab with id {id} not found.");
+        }
+
     }
 }
