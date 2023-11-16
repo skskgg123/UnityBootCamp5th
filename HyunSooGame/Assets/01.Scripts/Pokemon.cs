@@ -86,19 +86,31 @@ public class Pokemon : MonoBehaviour
         Pokemon ohterPokemon = collision.gameObject.GetComponent<Pokemon>();
         if (ohterPokemon != null && id == ohterPokemon.id && !isMerge)
         {
-            isMerge = true;
+            float meX = transform.position.x;
+            float meY = transform.position.y;
+            float otherX = ohterPokemon.transform.position.x;
+            float otherY = ohterPokemon.transform.position.y;
 
-            rb.simulated = false;
-            Destroy(ohterPokemon.gameObject);
-            Destroy(gameObject);
-            id++;
 
-            // 다음 ID의 Pokemon 생성 
-            //Pokemon nextPokemon = Instantiate(PokemonAssets.Instance.GetPokemonById(id), this.transform.position, Quaternion.identity);
-            //nextPokemon.rb.gravityScale = 1f;
-            //CreateNewPokemon(this.transform.position);
-            FindAndCreateTangent();
 
+            if (meY < otherY || (meY == otherY && meX < otherX))
+            {
+
+                isMerge = true;
+
+                rb.simulated = false;
+                Destroy(ohterPokemon.gameObject);
+                Destroy(gameObject);
+                id++;
+
+
+
+                // 다음 ID의 Pokemon 생성 
+                Pokemon nextPokemon = Instantiate(PokemonAssets.Instance.GetPokemonById(id), this.transform.position, Quaternion.identity);
+                //nextPokemon.rb.gravityScale = 1f;
+                //CreateNewPokemon(this.transform.position);
+                //FindAndCreateTangent();
+            }
         }
 
         
@@ -121,13 +133,15 @@ public class Pokemon : MonoBehaviour
     {
         foreach (var otherPokemon in touched)
         {
-            Vector3 tangentPoint;
-            float tangentRadius;
+            List<CircleCollider2D> tangentCircles = CalculateExternalTangentCirclesCollider(pokeCollider, otherPokemon.pokeCollider);
 
-            if (CalculateTangentPoint(this, otherPokemon, out tangentPoint, out tangentRadius))
+            // 외접한 중심원 생성
+            CreateCenterPokemonWithExternalTangent(id, otherPokemon.transform.position, tangentCircles[0]);
+
+            // 외접하는 원들 생성
+            for (int i = 1; i < tangentCircles.Count; i++)
             {
-                // 내접 지점에서 새로운 포켓몬 생성
-                CreateNewPokemon(tangentPoint, tangentRadius);
+                CreateNewPokemon(this.transform.position, tangentCircles[i].radius);
             }
         }
 
@@ -135,44 +149,54 @@ public class Pokemon : MonoBehaviour
         CreateNewPokemon(this.transform.position, pokeCollider.radius);
     }
 
-    private bool CalculateTangentPoint(Pokemon pokemon1, Pokemon pokemon2, out Vector3 tangentPoint, out float tangentRadius)
+
+    private List<CircleCollider2D> CalculateExternalTangentCirclesCollider(CircleCollider2D collider1, CircleCollider2D collider2)
     {
-        tangentPoint = Vector3.zero;
-        tangentRadius = 0f;
+        // 두 원이 외접할 때 외접하는 중심원과 외접하는 원들의 콜라이더를 계산
+        List<CircleCollider2D> tangentCircles = new List<CircleCollider2D>();
 
-        float d = Vector3.Distance(pokemon1.transform.position, pokemon2.transform.position);
-        float r1 = pokemon1.pokeCollider.radius;
-        float r2 = pokemon2.pokeCollider.radius;
+        float d = Vector2.Distance(collider1.transform.position, collider2.transform.position);
 
-        // 두 원이 만나지 않는 경우
-        if (d > r1 + r2)
-        {
-            return false;
-        }
+        // 외접하는 중심원의 반지름
+        float centerCircleRadius = (collider1.radius * collider2.radius) / (collider1.radius + collider2.radius - d);
 
-        // 두 원이 동심원인 경우
-        if (d < Mathf.Abs(r1 - r2))
-        {
-            return false;
-        }
+        // 외접하는 원들의 반지름
+        float tangentCircleRadius1 = (collider1.radius * centerCircleRadius) / (collider1.radius - centerCircleRadius);
+        float tangentCircleRadius2 = (collider2.radius * centerCircleRadius) / (collider2.radius - centerCircleRadius);
 
-        // 외접 지점과 반지름 계산
-        float a = (r1 * r1 + r2 * r2 + d * d) / (2 * d);
-        float h = Mathf.Sqrt(r1 * r1 - a * a);
+        tangentCircles.Add(CreateCircleCollider(collider1.transform.position, centerCircleRadius));
+        tangentCircles.Add(CreateCircleCollider(collider1.transform.position, tangentCircleRadius1));
+        tangentCircles.Add(CreateCircleCollider(collider2.transform.position, tangentCircleRadius2));
 
-        // 외접 지점 계산
-        Vector3 direction = (pokemon2.transform.position - pokemon1.transform.position).normalized;
-        tangentPoint = pokemon1.transform.position + direction * a - direction.normalized * h;
-
-        // 외접한 반지름 계산
-        tangentRadius = r1 + r2 - a;
-
-        return true;
+        return tangentCircles;
     }
 
-    void CreateNewPokemon(Vector3 position, float tangentRadius)
+    private void CreateCenterPokemonWithExternalTangent(int newId, Vector2 externalTangentPoint, CircleCollider2D tangentCollider)
     {
+        // 새로운 원의 중심을 계산
+        Vector2 newPokemonCenter = CalculateNewPokemonCenter(externalTangentPoint, tangentCollider.radius);
 
+        // R의 ID에 해당하는 포켓몬 생성
+        Pokemon centerPokemon = Instantiate(PokemonAssets.Instance.GetPokemonById(newId), newPokemonCenter, Quaternion.identity);
+
+        // 중심 포켓몬의 콜라이더를 설정
+        //centerPokemon.pokeCollider.radius = tangentCollider.radius;
+
+        // 중심 포켓몬에게 Drag 호출 (원하는 경우 Drag 호출 여부를 조절)
+        centerPokemon.Drag();
+    }
+
+    private Vector2 CalculateNewPokemonCenter(Vector2 externalTangentPoint, float newRadius)
+    {
+        // 여기에 원의 중심을 계산하는 방정식 추가
+        // 외접한 두 원의 외접점에서 일정 거리만큼 떨어진 위치에 새로운 원을 생성하도록 하였습니다.
+        // 원하는 방식에 따라 수정이 필요합니다.
+        Vector2 direction = (externalTangentPoint - (Vector2)transform.position).normalized;
+        return externalTangentPoint + direction * newRadius;
+    }
+
+    private void CreateNewPokemon(Vector2 position, float tangentRadius)
+    {
         // 프리팹을 가져옴
         Pokemon newPokemonPrefab = PokemonAssets.Instance.GetPokemonById(id);
 
@@ -183,11 +207,25 @@ public class Pokemon : MonoBehaviour
             Pokemon newPokemonObject = Instantiate(newPokemonPrefab, position, Quaternion.identity);
             Pokemon newPokemon = newPokemonObject.GetComponent<Pokemon>();
 
+            // 설정된 반지름으로 Collider 조정
+            //newPokemon.pokeCollider.radius = tangentRadius;
         }
         else
         {
             Debug.LogError($"Prefab with id {id} not found.");
         }
+    }
 
+    private CircleCollider2D CreateCircleCollider(Vector2 position, float radius)
+    {
+        // 새로운 콜라이더 생성
+        GameObject colliderObject = new GameObject("TangentCollider");
+        CircleCollider2D circleCollider = colliderObject.AddComponent<CircleCollider2D>();
+
+        // 위치와 반지름 설정
+        circleCollider.transform.position = position;
+        circleCollider.radius = radius;
+
+        return circleCollider;
     }
 }
