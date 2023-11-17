@@ -219,6 +219,7 @@ MonoBehaviour:
   id: 2
   _isDrag: 0
   _isDrop: 0
+  _radius: 0
   _ground:
     serializedVersion: 2
     m_Bits: 0
