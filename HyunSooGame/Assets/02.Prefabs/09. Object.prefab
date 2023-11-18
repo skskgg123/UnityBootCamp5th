@@ -95,7 +95,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 174607724, guid: dc4afbb50b250c4439df0f440359cbcb, type: 3}
+  m_Sprite: {fileID: -1367491366, guid: dc4afbb50b250c4439df0f440359cbcb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -157,12 +157,8 @@ MonoBehaviour:
   id: 8
   _isDrag: 0
   _isDrop: 0
-  _ground:
-    serializedVersion: 2
-    m_Bits: 0
-  _otherPokemon:
-    serializedVersion: 2
-    m_Bits: 0
+  _effect: {fileID: 1442177106521476877, guid: 523259231feb4b1488bc25e75fc3b3ed, type: 3}
+  effectPrefab: {fileID: 1287456524691017228, guid: 523259231feb4b1488bc25e75fc3b3ed, type: 3}
   leftBorder: 0
   rightBorder: 0
   isMerge: 0
@@ -200,7 +196,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.43
 --- !u!50 &6362521403284537787
 Rigidbody2D:
   serializedVersion: 4

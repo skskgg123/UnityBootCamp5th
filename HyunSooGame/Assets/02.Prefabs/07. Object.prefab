@@ -175,7 +175,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.44
 --- !u!50 &6362521403284537787
 Rigidbody2D:
   serializedVersion: 4
@@ -219,12 +219,8 @@ MonoBehaviour:
   id: 6
   _isDrag: 0
   _isDrop: 0
-  _ground:
-    serializedVersion: 2
-    m_Bits: 0
-  _otherPokemon:
-    serializedVersion: 2
-    m_Bits: 0
+  _effect: {fileID: 1442177106521476877, guid: b01bc666a3e24a746b2a4735935516f5, type: 3}
+  effectPrefab: {fileID: 1287456524691017228, guid: b01bc666a3e24a746b2a4735935516f5, type: 3}
   leftBorder: 0
   rightBorder: 0
   isMerge: 0

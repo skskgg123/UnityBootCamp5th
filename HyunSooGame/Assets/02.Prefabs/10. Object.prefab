@@ -219,6 +219,7 @@ MonoBehaviour:
   id: 9
   _isDrag: 0
   _isDrop: 0
+  _effect: {fileID: 1287456524691017228, guid: e845fa0f0b14c584cabb6bb6915461a9, type: 3}
   _ground:
     serializedVersion: 2
     m_Bits: 0

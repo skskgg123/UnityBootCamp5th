@@ -219,13 +219,8 @@ MonoBehaviour:
   id: 2
   _isDrag: 0
   _isDrop: 0
-  _radius: 0
-  _ground:
-    serializedVersion: 2
-    m_Bits: 0
-  _otherPokemon:
-    serializedVersion: 2
-    m_Bits: 0
+  _effect: {fileID: 1442177106521476877, guid: 4671e7223eb967c4e88ee5b33af84883, type: 3}
+  effectPrefab: {fileID: 1287456524691017228, guid: 4671e7223eb967c4e88ee5b33af84883, type: 3}
   leftBorder: -7
   rightBorder: 7
   isMerge: 0

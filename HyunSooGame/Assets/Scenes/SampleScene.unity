@@ -475,6 +475,7 @@ MonoBehaviour:
   - {fileID: 1650777714576139497, guid: b059aa3dcb07c2c4999080a1a2f60ea9, type: 3}
   - {fileID: 5041073250852917364, guid: a01f3ffb3a3e0dc45a9fdb59e61dccd2, type: 3}
   - {fileID: 5311281147195056814, guid: a09f958b6b95ba846bb3383dbd55a986, type: 3}
+  effectPrefab: {fileID: 1287456524691017228, guid: e845fa0f0b14c584cabb6bb6915461a9, type: 3}
 --- !u!4 &1295150480
 Transform:
   m_ObjectHideFlags: 0

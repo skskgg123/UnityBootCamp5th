@@ -1,8 +1,7 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
+
 
 public class Pokemon : MonoBehaviour
 {
@@ -14,8 +13,8 @@ public class Pokemon : MonoBehaviour
 
     private float _radius;
 
-    [SerializeField] public LayerMask _ground;
-    [SerializeField] public LayerMask _otherPokemon;
+    public ParticleSystem _effect;
+    public GameObject effectPrefab;
 
     [SerializeField] public float leftBorder; 
     [SerializeField] public float rightBorder;
@@ -69,6 +68,7 @@ public class Pokemon : MonoBehaviour
         {
             isStopped = true;
         }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -87,6 +87,9 @@ public class Pokemon : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
+        if (id == PokemonAssets.Instance.pokemonList.Count - 1)
+            return;
+
         Pokemon ohterPokemon = collision.gameObject.GetComponent<Pokemon>();
         if (ohterPokemon != null && id == ohterPokemon.id && !isMerge)
         {
@@ -108,13 +111,30 @@ public class Pokemon : MonoBehaviour
                 id++;
 
 
+               
+                if (effectPrefab != null)
+                {
+                    //이펙트 생성
+                    GameObject effectObject = Instantiate(effectPrefab, transform.position, Quaternion.identity);
+                    ParticleSystem effect = effectObject.GetComponent<ParticleSystem>();
+                    effect.Play();
+
+                    Destroy(effectObject, 1f);
+                }
 
                 // 다음 ID의 Pokemon 생성 
                 Pokemon nextPokemon = Instantiate(PokemonAssets.Instance.GetPokemonById(id), this.transform.position, Quaternion.identity);
-                //nextPokemon.rb.gravityScale = 1f;
-                //CreateNewPokemon(this.transform.position);
-                //FindAndCreateTangent();
+
+                // 다음 ID의 Pokemon 생성 
+                //float[] result = CreatNextPokemon(meX, meY, _radius, otherX, otherY, otherPokemon._radius);
+
+                //float newX = result[0];
+                //float newY = result[1];
+
+                //Pokemon nextPokemon = Instantiate(PokemonAssets.Instance.GetPokemonById(id), new Vector3(newX, newY, 0), Quaternion.identity);
+
             }
+            
         }
 
         
@@ -133,5 +153,33 @@ public class Pokemon : MonoBehaviour
         }
     }
 
+    /*private float[] CreatNextPokemon(float x1, float y1, float radius1, float x2, float y2, float radius2)
+    {
+        float R = 1;
+        float[] result = new float[2];
 
+        foreach (var otherPokemon in touched)
+        {
+            float scale1 = Mathf.Max(transform.localScale.x, transform.localScale.y);
+            float scale2 = Mathf.Max(otherPokemon.transform.localScale.x, otherPokemon.transform.localScale.y);
+
+            float root = MathNet.Numerics.RootFinding.NewtonRaphson(x =>
+            {
+                float eq1 = (x - x1) * (x - x1) + (y1 - 0) * (y1 - 0) - (radius1 * scale1 + R) * (radius1 * scale1 + R);
+                float eq2 = (x - x2) * (x - x2) + (y2 - 0) * (y2 - 0) - (radius2 * scale2 + R) * (radius2 * scale2 + R);
+
+                return eq1 - eq2;
+            }, 2.0f, 10.0f, 0.0001f);
+
+            float newX = root;
+            float newY = Mathf.Sqrt(Mathf.Pow(radius1 * scale1 + R, 2) - Mathf.Pow(newX - x1, 2));
+
+            result[0] = newX;
+            result[1] = newY;
+        }
+
+        return result;
+    }*/
 }
+
+
