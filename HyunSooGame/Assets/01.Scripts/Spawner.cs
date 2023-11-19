@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
 
     private void Update()
     {
-        if (last == null)
+        if (last == null && !PokemonAssets.Instance.isOver)
         { 
             SpawnNewPokemon();
         }

@@ -200,7 +200,7 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!114 &5311281147195056814
@@ -219,13 +219,10 @@ MonoBehaviour:
   id: 9
   _isDrag: 0
   _isDrop: 0
-  _effect: {fileID: 1287456524691017228, guid: e845fa0f0b14c584cabb6bb6915461a9, type: 3}
-  _ground:
-    serializedVersion: 2
-    m_Bits: 0
-  _otherPokemon:
-    serializedVersion: 2
-    m_Bits: 0
+  _myScore: 10
+  _effect: {fileID: 1442177106521476877, guid: e845fa0f0b14c584cabb6bb6915461a9, type: 3}
+  effectPrefab: {fileID: 0}
   leftBorder: 0
   rightBorder: 0
+  deadTime: 0
   isMerge: 0

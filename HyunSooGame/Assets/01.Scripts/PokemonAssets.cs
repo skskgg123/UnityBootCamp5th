@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -10,6 +11,11 @@ public class PokemonAssets : MonoBehaviour
 
     public static PokemonAssets Instance => _instance;
 
+    // UI Text 컴포넌트
+    public TextMeshProUGUI scoreText;
+
+    //점수 저장
+    public int score = 0;
 
     // Dictionary를 사용하여 ID로 Pokemon 객체를 찾음
     private Dictionary<int, Pokemon> pokemonID = new Dictionary<int, Pokemon>();
@@ -31,29 +37,6 @@ public class PokemonAssets : MonoBehaviour
         ToPokemonList();
     }
 
-    public void PokemonRigidbody(int id)
-    {
-        Pokemon pokemon = GetPokemonById(id);
-
-        if (pokemon != null)
-        {
-            Rigidbody2D pokemonRigidbody = pokemon.GetComponent<Rigidbody2D>();
-            if (pokemonRigidbody != null)
-            {
-                pokemonRigidbody.simulated = true;
-            }
-            else
-            {
-                Debug.LogError("리지드바디가 없습니다.");
-            }
-        }
-        else
-        {
-            Debug.LogError("해당 ID의 포켓몬이 없습니다.");
-        }
-    }
-
-    //딕션어리 사옹해서 id값으로 vlaue값찾기 키-값 
     public void ToPokemonList()
     {
         if (pokemonList == null)
@@ -98,4 +81,48 @@ public class PokemonAssets : MonoBehaviour
         // 해당 ID에 맞는 Pokemon이 없을 경우 null 반환
         return null;
     }
+
+    public void UpdateScoreText()
+    {
+        // UI Text에 현재 점수 표시
+        if (scoreText != null)
+        {
+            scoreText.text =  score.ToString();
+        }
+    }
+
+    public bool isOver = false;
+
+    public void GameOver()
+    {
+        if (isOver)
+            return;
+
+        isOver = true;
+
+        StartCoroutine("GameOverRoutine");
+    }
+
+    IEnumerator GameOverRoutine()
+    {
+        Pokemon[] currentPokemon = FindObjectsOfType<Pokemon>();
+
+        for (int i = 0; i < currentPokemon.Length; i++)
+        {
+            currentPokemon[i].rb.simulated = false;
+        }
+
+        for (int i = 0; i < currentPokemon.Length; i++)
+        {
+            Destroy(currentPokemon[i].gameObject);
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+
+    public void ReStart()
+    {
+        score = 0;
+        isOver = false;
+    }
+
 }

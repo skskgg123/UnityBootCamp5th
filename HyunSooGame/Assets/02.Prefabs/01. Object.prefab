@@ -157,10 +157,13 @@ MonoBehaviour:
   id: 0
   _isDrag: 0
   _isDrop: 0
+  _myScore: 1
   _effect: {fileID: 1442177106521476877, guid: e845fa0f0b14c584cabb6bb6915461a9, type: 3}
   effectPrefab: {fileID: 1287456524691017228, guid: e845fa0f0b14c584cabb6bb6915461a9, type: 3}
   leftBorder: -8
   rightBorder: 8
+  deadTime: 0
+  score: {fileID: 0}
   isMerge: 0
 --- !u!58 &6362521403284537784
 CircleCollider2D:
@@ -221,6 +224,6 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
