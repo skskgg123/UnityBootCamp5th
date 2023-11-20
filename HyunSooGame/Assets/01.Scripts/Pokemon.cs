@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using MathNet.Numerics;
 
 public class Pokemon : MonoBehaviour
 {
@@ -48,7 +49,7 @@ public class Pokemon : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         pokeCollider = GetComponent<CircleCollider2D>();
         //rb.gravityScale = 0f;
-
+        MathNet.Numerics.FindRoots.Cubic(1, 1, 1, 1);
         _radius = pokeCollider.radius * Mathf.Max(transform.localScale.x, transform.localScale.y);
     }
 

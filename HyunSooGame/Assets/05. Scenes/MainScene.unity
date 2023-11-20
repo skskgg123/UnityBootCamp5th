@@ -354,7 +354,7 @@ MonoBehaviour:
   arrowImage: {fileID: 704457527}
   additionalImage: {fileID: 1795615604}
   buttonText: {fileID: 271185559}
-  offsetY: 45
+  offsetY: 60
 --- !u!95 &533853372
 Animator:
   serializedVersion: 5
@@ -629,7 +629,7 @@ MonoBehaviour:
   arrowImage: {fileID: 704457527}
   additionalImage: {fileID: 1795615604}
   buttonText: {fileID: 271185559}
-  offsetY: 45
+  offsetY: 60
 --- !u!114 &700633561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1161,7 +1161,7 @@ MonoBehaviour:
   arrowImage: {fileID: 704457527}
   additionalImage: {fileID: 1795615604}
   buttonText: {fileID: 271185559}
-  offsetY: 45
+  offsetY: 60
 --- !u!95 &1526814172
 Animator:
   serializedVersion: 5
