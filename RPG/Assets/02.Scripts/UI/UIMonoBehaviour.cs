@@ -1,11 +1,11 @@
+using RPG.GameSystems;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace RPG.UI
 {
-    [RequireComponent(typeof(Canvas), typeof(GraphicRaycaster))]
-    public abstract class UIMonoBehaviour : MonoBehaviour, IUI
+    public abstract class UIMonoBehaviour : MonoBehaviour, IUI, IInitializable
     {
         public int sortingOrder 
         { 
@@ -22,7 +22,7 @@ namespace RPG.UI
 
         public void InputAction()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void Show()
