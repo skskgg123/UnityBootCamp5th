@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace RPG.DB
@@ -11,6 +10,5 @@ namespace RPG.DB
         T Find(Predicate<T> match);
         void Insert(T entity);
         void Update(T entity);
-
     }
 }
