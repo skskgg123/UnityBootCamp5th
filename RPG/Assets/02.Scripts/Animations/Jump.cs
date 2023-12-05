@@ -9,7 +9,7 @@ namespace RPG.Animations
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             base.OnStateEnter(animator, stateInfo, layerIndex);
-            controller.transform.position += Vector3.up * 0.1f;
+            controller.transform.position += Vector3.up * 0.15f;
             controller.AddForce(Vector3.up * _force, ForceMode.Impulse);
         }
 

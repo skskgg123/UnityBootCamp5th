@@ -15,10 +15,36 @@ namespace RPG.Controllers
     [RequireComponent(typeof(Rigidbody))]
     public class CharacterController : MonoBehaviour
     {
+        public bool aiOn
+        {
+            get => _aiOn;
+            set
+            {
+                if (_aiOn == value)
+                    return;
+
+                _aiOn = value;
+                _agent.enabled = value;
+
+                if (value)
+                    _agent.speed = moveGain;
+            }
+        }
+
         public State state;
         public virtual float horizontal { get; set; }
         public virtual float vertical { get; set; }
-        public virtual float moveGain { get; set; }
+        public virtual float moveGain 
+        { 
+            get => _moveGain; 
+            set
+            {
+                _moveGain = value;
+                
+                if(_aiOn)
+                    _agent.speed = value;
+            }
+        }
 
         public virtual Vector3 velocity 
         { 
@@ -26,10 +52,13 @@ namespace RPG.Controllers
             set => _velocity = value;
         }
 
+        private bool _aiOn;
+        private float _moveGain;
         private Vector3 _velocity;
         private Vector3 _accel;
         [SerializeField] private float _slopeAngle = 45.0f;
         [SerializeField] private LayerMask _groundMask;
+        private NavMeshAgent _agent;
         private Animator _animator;
         private Rigidbody _rigidbody;
         // F = m a  (힘 = 질량 x 가속도)
@@ -66,6 +95,7 @@ namespace RPG.Controllers
         {
             _animator = GetComponent<Animator>();
             _rigidbody = GetComponent<Rigidbody>();
+            _agent = GetComponent<NavMeshAgent>();
             Skill[] skills = _animator.GetBehaviours<Skill>();
             for (int i = 0; i < skills.Length; i++)
             {
@@ -84,6 +114,24 @@ namespace RPG.Controllers
 
         private void FixedUpdate()
         {
+            if(_aiOn)
+            {
+
+            }
+            else
+            {
+                ManualMove();
+            }
+        }
+
+        public bool IsGrounded()
+        {
+            Collider[] cols = Physics.OverlapSphere(transform.position, 0.15f, _groundMask);
+            return cols.Length > 0;
+        }
+
+        private void ManualMove()
+        {
             RaycastHit hit;
             NavMeshHit navMeshHit;
             Vector3 expected = transform.position
@@ -94,7 +142,7 @@ namespace RPG.Controllers
                                 Vector3.Distance(transform.position, expected),
                                 _groundMask))
             {
-                if(NavMesh.SamplePosition(hit.point,
+                if (NavMesh.SamplePosition(hit.point,
                                           out navMeshHit,
                                           1.0f,
                                           NavMesh.AllAreas))
@@ -140,13 +188,6 @@ namespace RPG.Controllers
                 _accel += Physics.gravity * Time.fixedDeltaTime;
             }
         }
-
-        public bool IsGrounded()
-        {
-            Collider[] cols = Physics.OverlapSphere(transform.position, 0.05f, _groundMask);
-            return cols.Length > 0;
-        }
-
 
         private void FootL() { }
         private void FootR() { }
